@@ -99,3 +99,68 @@
     "future_outlook": "The demand for tech talent remains extremely high as every industry undergoes digital transformation, with AI and quantum computing representing the next frontiers."
   },
   
+  {
+    "field_name": "Business and Entrepreneurship",
+    "description": "Business careers involve the management, operation, and growth of organizations, focusing on value creation and commercial success.",
+    "importance": "Business drives economic growth, creates jobs, and provides the products and services that society relies on every day.",
+    "subfields": [
+      { "name": "Management", "description": "Leading teams and departments to achieve organizational goals." },
+      { "name": "Marketing", "description": "Promoting products and services to reach and engage customers." },
+      { "name": "Human Resources", "description": "Managing the recruitment, training, and well-being of employees." },
+      { "name": "Operations", "description": "Ensuring the efficient production and delivery of goods and services." },
+      { "name": "Entrepreneurship", "description": "Starting and scaling new business ventures from the ground up." }
+    ],
+    "skills": [
+      { "name": "Leadership", "description": "Inspiring and guiding others toward a common vision." },
+      { "name": "Strategic Planning", "description": "Setting long-term goals and determining the best path to achieve them." },
+      { "name": "Communication", "description": "Effectively conveying ideas to stakeholders, clients, and team members." },
+      { "name": "Financial Literacy", "description": "Understanding budgets, profit margins, and financial statements." }
+    ],
+    "education_paths": [
+      "Bachelor's degree in Business Administration (BBA), Marketing, or Management.",
+      "Master of Business Administration (MBA) for advanced leadership roles.",
+      "Professional certifications in project management (PMP) or specialized areas."
+    ],
+    "work_environment": "Business professionals work in corporate offices, co-working spaces, and increasingly in flexible or remote settings.",
+    "industries": [
+      "Retail and Consumer Goods",
+      "Consulting",
+      "Real Estate",
+      "Hospitality and Tourism",
+      "Logistics and Supply Chain"
+    ],
+    "future_outlook": "The business world is shifting toward sustainable practices, digital-first operations, and more agile, decentralized organizational structures."
+  },
+  {
+    "field_name": "Creative Arts and Design",
+    "description": "Creative arts careers focus on self-expression and visual communication through various mediums, blending aesthetics with functionality.",
+    "importance": "Arts and design enrich culture, improve user experiences, and provide powerful ways to communicate complex ideas and emotions.",
+    "subfields": [
+      { "name": "Graphic Design", "description": "Creating visual content to communicate messages through typography and imagery." },
+      { "name": "UX/UI Design", "description": "Designing the look and feel of digital products to ensure they are user-friendly." },
+      { "name": "Fine Arts", "description": "Creating works primarily for their aesthetic or conceptual value, such as painting or sculpture." },
+      { "name": "Fashion Design", "description": "Designing clothing, accessories, and footwear." },
+      { "name": "Interior Design", "description": "Planning and furnishing the interiors of private homes and commercial buildings." }
+    ],
+    "skills": [
+      { "name": "Visual Creativity", "description": "Generating original ideas and translating them into visual forms." },
+      { "name": "Design Software", "description": "Mastering tools like Adobe Creative Suite, Figma, or 3D modeling software." },
+      { "name": "Color Theory", "description": "Understanding how colors interact and influence human perception." },
+      { "name": "Storytelling", "description": "Using visual elements to convey a narrative or brand identity." }
+    ],
+    "education_paths": [
+      "Bachelor of Fine Arts (BFA) or Bachelor of Design (BDes).",
+      "Specialized art and design schools and conservatories.",
+      "Portfolio-based entry through self-study and freelance experience."
+    ],
+    "work_environment": "Creative professionals work in design agencies, in-house creative departments, film studios, and as independent freelancers.",
+    "industries": [
+      "Advertising and Marketing",
+      "Entertainment and Media",
+      "Fashion and Apparel",
+      "Architecture",
+      "Gaming and Animation"
+    ],
+    "future_outlook": "The rise of the 'creator economy' and the demand for high-quality digital experiences are creating new opportunities for artists and designers."
+  }
+]
