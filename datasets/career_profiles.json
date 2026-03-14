@@ -210,3 +210,45 @@
     "learning_roadmap": ["Learn project management methodologies", "Get PMP or CAPM certification", "Master planning software", "Develop soft skills", "Gain experience in a specific industry"]
   },
  
+   {
+    "id": 16,
+    "career_name": "UX/UI Designer",
+    "description": "Focuses on the user experience and interface design of digital products.",
+    "responsibilities": "Conduct user research, create wireframes, and design high-fidelity interfaces.",
+    "traits": { "creativity": 9, "technical": 7, "analytical": 8, "detail": 9, "social": 7, "communication": 8 },
+    "required_skills": ["Figma/Sketch", "User Research", "Prototyping", "Information Architecture", "Visual Design"],
+    "education_path": "Design / HCI / Psychology",
+    "work_environment": "Tech companies, design agencies, remote",
+    "salary_range": "High",
+    "future_demand": "Very High",
+    "difficulty_level": "Medium",
+    "learning_roadmap": ["Learn design fundamentals", "Master Figma", "Study user psychology", "Build case studies", "Network with developers"]
+  },
+  {
+    "id": 17,
+    "career_name": "Lawyer",
+    "description": "Advises and represents clients on legal issues.",
+    "responsibilities": "Research legal cases, draft legal documents, and represent clients in court.",
+    "traits": { "analytical": 10, "communication": 10, "detail": 9, "problem_solving": 8, "leadership": 7, "social": 6 },
+    "required_skills": ["Legal Research", "Writing", "Negotiation", "Critical Thinking", "Public Speaking"],
+    "education_path": "Law (JD)",
+    "work_environment": "Law firms, corporate legal departments, government",
+    "salary_range": "Very High",
+    "future_demand": "Medium",
+    "difficulty_level": "Very High",
+    "learning_roadmap": ["Earn a Bachelor's degree", "Pass the LSAT", "Complete Law School", "Pass the Bar Exam", "Gain experience in a firm"]
+  },
+  {
+    "id": 18,
+    "career_name": "Robotics Engineer",
+    "description": "Designs, builds, and maintains robots.",
+    "responsibilities": "Develop robotic control systems, design mechanical components, and test robotic prototypes.",
+    "traits": { "technical": 10, "analytical": 9, "problem_solving": 10, "creativity": 8, "detail": 8, "risk": 6 },
+    "required_skills": ["Robotics Programming", "Mechanical Design", "Electronics", "Control Systems", "AI Basics"],
+    "education_path": "Robotics / Mechatronics / Mechanical Engineering",
+    "work_environment": "Research labs, manufacturing plants, tech companies",
+    "salary_range": "High",
+    "future_demand": "High",
+    "difficulty_level": "High",
+    "learning_roadmap": ["Learn electronics and circuits", "Study mechanical design", "Master robotics programming (C++/Python)", "Build small robot projects", "Specialize in a subfield"]
+  },
