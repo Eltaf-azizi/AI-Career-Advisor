@@ -65,3 +65,74 @@ export const generateFullCareerDetails = async (careerName: string): Promise<Car
   }
 };
 
+
+export const explainCareerFit = async (career: Career, userTraits: Record<string, number>) => {
+  const prompt = `
+    A student has the following personality and skill profile (0-10 scale):
+    ${Object.entries(userTraits).map(([trait, score]) => `- ${trait}: ${score}`).join("\n")}
+
+    The career recommended for them is: ${career.career_name}.
+    Description: ${career.description}
+    
+    Explain in 3-4 concise paragraphs why this career is a great fit for their specific profile. 
+    Focus on how their top strengths align with the career's requirements.
+    Use a supportive, encouraging tone like a professional career counselor.
+  `;
+
+  try {
+    const response = await ai.models.generateContent({
+      model: "gemini-3.1-pro-preview",
+      contents: prompt,
+    });
+    return response.text;
+  } catch (error) {
+    console.error("Gemini Error:", error);
+    return "Failed to generate explanation. Please try again later.";
+  }
+};
+
+export const generateDetailedRoadmap = async (career: Career) => {
+  const prompt = `
+    Generate a detailed, step-by-step learning roadmap for someone wanting to become a ${career.career_name}.
+    
+    The career requires these skills: ${career.required_skills.join(", ")}.
+    The typical education path is: ${career.education_path}.
+    
+    Format the response as a clear, structured guide with:
+    1. Phase 1: Foundations (3-6 months)
+    2. Phase 2: Core Skills (6-12 months)
+    3. Phase 3: Specialization & Projects (12+ months)
+    4. Phase 4: Job Readiness & Portfolio
+    
+    For each phase, list specific topics to learn and types of projects to build.
+  `;
+
+  try {
+    const response = await ai.models.generateContent({
+      model: "gemini-3.1-pro-preview",
+      contents: prompt,
+    });
+    return response.text;
+  } catch (error) {
+    console.error("Gemini Error:", error);
+    return "Failed to generate roadmap. Please try again later.";
+  }
+};
+
+export const startCareerChat = (career?: Career) => {
+  const systemInstruction = `
+    You are an expert AI Career Mentor. Your goal is to help students navigate their career choices.
+    ${career ? `The student is currently interested in becoming a ${career.career_name}.` : "The student is exploring various career options."}
+    
+    Be supportive, insightful, and practical. Provide specific advice on skills, education, and industry trends.
+    If the student asks about other careers, feel free to discuss them, but always bring it back to how it fits their potential.
+    Keep responses concise but informative.
+  `;
+
+  return ai.chats.create({
+    model: "gemini-3-flash-preview",
+    config: {
+      systemInstruction,
+    },
+  });
+};
