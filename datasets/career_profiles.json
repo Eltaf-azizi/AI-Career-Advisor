@@ -399,4 +399,52 @@
     "sub_disciplines": ["Petrochemicals", "Pharmaceutical Engineering", "Food Processing", "Materials Science"],
     "student_reality": "Heavy on math and thermodynamics. You'll often work in large industrial plants or research labs. Safety is the number one priority."
   },
- 
+  {
+    "id": 26,
+    "career_name": "Aerospace Engineering",
+    "description": "Designs and develops aircraft, spacecraft, and missiles.",
+    "responsibilities": "Design aerodynamic systems, test propulsion units, and oversee flight testing.",
+    "traits": { "technical": 10, "analytical": 10, "problem_solving": 10, "detail": 10, "risk": 8, "creativity": 7 },
+    "required_skills": ["Aerodynamics", "Propulsion Systems", "Orbital Mechanics", "CAD Software", "Structural Design"],
+    "education_path": "Aerospace Engineering",
+    "work_environment": "Aerospace companies, research centers, government agencies",
+    "salary_range": "High",
+    "future_demand": "High",
+    "difficulty_level": "Very High",
+    "learning_roadmap": ["Master advanced physics and calculus", "Study aerodynamics and propulsion", "Learn aerospace simulation tools", "Participate in design competitions", "Pursue advanced degrees"],
+    "core_philosophy": "Aerospace Engineering is the study of flight—both within Earth's atmosphere and in space. It pushes the boundaries of speed, efficiency, and extreme environments.",
+    "curriculum": [
+      "Aerodynamics: Studying how air flows over objects.",
+      "Propulsion: Designing engines for planes and rockets.",
+      "Orbital Mechanics: Calculating paths in space.",
+      "Flight Dynamics: Controlling aircraft motion."
+    ],
+    "tools_software": ["ANSYS Fluent", "CATIA", "MATLAB/Simulink", "Wind Tunnels", "Flight Simulators"],
+    "sub_disciplines": ["Aeronautics (Planes)", "Astronautics (Spacecraft)", "Avionics", "Structural Design"],
+    "student_reality": "Extremely high precision is required. You'll work with cutting-edge materials and technologies. It's a field for those who love high-stakes challenges."
+  },
+  {
+    "id": 27,
+    "career_name": "Biomedical Engineering",
+    "description": "Applies engineering principles to medicine and biology for healthcare purposes.",
+    "responsibilities": "Design medical devices, develop artificial organs, and maintain medical equipment.",
+    "traits": { "helping": 10, "technical": 9, "analytical": 9, "problem_solving": 9, "detail": 9, "social": 7 },
+    "required_skills": ["Biomechanics", "Bioinstrumentation", "Tissue Engineering", "Medical Imaging", "Biology"],
+    "education_path": "Biomedical Engineering",
+    "work_environment": "Hospitals, research labs, medical device companies",
+    "salary_range": "High",
+    "future_demand": "Very High",
+    "difficulty_level": "High",
+    "learning_roadmap": ["Master biology and engineering basics", "Study biomechanics and bioelectronics", "Learn medical simulation tools", "Gain clinical or lab experience", "Stay updated on medical regulations"],
+    "core_philosophy": "Biomedical Engineering bridges the gap between engineering and medicine. It applies engineering principles to healthcare, designing life-saving devices like artificial organs, prosthetics, and medical imaging systems.",
+    "curriculum": [
+      "Biomechanics: Studying forces on the human body.",
+      "Bioinstrumentation: Designing sensors for medical data.",
+      "Tissue Engineering: Growing biological substitutes.",
+      "Medical Imaging: Understanding MRI, CT, and X-ray tech."
+    ],
+    "tools_software": ["LabVIEW", "MATLAB", "COMSOL Multiphysics", "3D Bioprinters", "Medical Simulation Software"],
+    "sub_disciplines": ["Bioinformatics", "Genetic Engineering", "Prosthetics & Orthotics", "Medical Device Design"],
+    "student_reality": "You'll need a strong foundation in both biology and high-level engineering. It's a deeply rewarding field where your work directly saves lives."
+  }
+]
