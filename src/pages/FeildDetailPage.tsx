@@ -3,8 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { 
   ArrowLeft, ArrowRight, Briefcase, BookOpen, 
-  Target, Layers, Zap, GraduationCap, 
-  Factory, TrendingUp, MapPin 
+  Layers, Zap, GraduationCap 
 } from 'lucide-react';
 import { CareerField } from '../types';
 
@@ -39,13 +38,6 @@ export default function FieldDetailPage() {
       color: "bg-blue-50 text-blue-600 border-blue-100"
     },
     {
-      id: "importance",
-      title: "Why This Field is Important",
-      icon: Target,
-      content: field.importance,
-      color: "bg-emerald-50 text-emerald-600 border-emerald-100"
-    },
-    {
       id: "subfields",
       title: "Major Areas & Career Paths",
       icon: Layers,
@@ -56,7 +48,7 @@ export default function FieldDetailPage() {
     },
     {
       id: "skills",
-      title: "Common Skills in This Field",
+      title: "Common Skills",
       icon: Zap,
       isGrid: true,
       items: field.skills,
@@ -69,28 +61,6 @@ export default function FieldDetailPage() {
       isList: true,
       items: field.education_paths,
       color: "bg-rose-50 text-rose-600 border-rose-100"
-    },
-    {
-      id: "environment",
-      title: "Work Environment",
-      icon: MapPin,
-      content: field.work_environment,
-      color: "bg-cyan-50 text-cyan-600 border-cyan-100"
-    },
-    {
-      id: "industries",
-      title: "Industries Related to This Field",
-      icon: Factory,
-      isTags: true,
-      items: field.industries,
-      color: "bg-indigo-50 text-indigo-600 border-indigo-100"
-    },
-    {
-      id: "outlook",
-      title: "Future Outlook",
-      icon: TrendingUp,
-      content: field.future_outlook,
-      color: "bg-orange-50 text-orange-600 border-orange-100"
     }
   ];
 
@@ -162,16 +132,6 @@ export default function FieldDetailPage() {
                     </li>
                   ))}
                 </ul>
-              )}
-
-              {section.isTags && section.items && (
-                <div className="flex flex-wrap gap-3">
-                  {section.items.map((item: any, idx: number) => (
-                    <span key={idx} className="px-6 py-3 bg-stone-100 text-stone-700 rounded-full text-lg font-medium">
-                      {item}
-                    </span>
-                  ))}
-                </div>
               )}
             </div>
           </motion.section>

@@ -43,7 +43,7 @@
   },
   {
     "id": 4,
-    "career_name": "Software Developer",
+    "career_name": "Software Engineering",
     "description": "Develops computer applications and systems that allow people to perform specific tasks.",
     "responsibilities": "Write code, debug software, and collaborate with teams to build digital products.",
     "traits": { "technical": 10, "analytical": 8, "problem_solving": 9, "detail": 7, "creativity": 7, "communication": 6 },
@@ -53,7 +53,17 @@
     "salary_range": "High",
     "future_demand": "Very High",
     "difficulty_level": "Medium",
-    "learning_roadmap": ["Learn HTML/CSS/JS", "Master a framework like React", "Learn backend development", "Understand databases", "Contribute to open source"]
+    "learning_roadmap": ["Learn HTML/CSS/JS", "Master a framework like React", "Learn backend development", "Understand databases", "Contribute to open source"],
+    "core_philosophy": "Software Engineering is about applying engineering principles to software development. It's not just coding; it's about designing scalable, maintainable, and reliable systems.",
+    "curriculum": [
+      "Data Structures & Algorithms: Organizing and processing data efficiently.",
+      "Software Architecture: Designing high-level structures of software systems.",
+      "Operating Systems: Understanding how software interacts with hardware.",
+      "Databases: Managing and querying data."
+    ],
+    "tools_software": ["Git/GitHub", "Docker/Kubernetes", "VS Code", "Jira/Confluence", "Cloud Platforms (AWS/Azure)"],
+    "sub_disciplines": ["Full-stack Development", "Mobile App Development", "DevOps", "Cybersecurity"],
+    "student_reality": "Constant learning is required as technologies change rapidly. You'll spend a lot of time debugging and reading documentation."
   },
   {
     "id": 5,
@@ -165,7 +175,17 @@
     "salary_range": "High",
     "future_demand": "Medium",
     "difficulty_level": "High",
-    "learning_roadmap": ["Master physics and calculus", "Learn CAD tools", "Study mechanics and materials", "Gain hands-on experience", "Pursue FE/PE certification"]
+    "learning_roadmap": ["Master physics and calculus", "Learn CAD tools", "Study mechanics and materials", "Gain hands-on experience", "Pursue FE/PE certification"],
+    "core_philosophy": "Mechanical Engineering is perhaps the broadest of all engineering disciplines. It is based on the principle that if something moves or uses energy, a mechanical engineer designed it. It is the 'Jack of all Trades' engineering field.",
+    "curriculum": [
+      "Statics: The study of forces on non-moving objects.",
+      "Dynamics: The study of forces on moving objects.",
+      "Strength of Materials: Understanding how materials deform and break under stress.",
+      "Thermodynamics: The study of energy conversion."
+    ],
+    "tools_software": ["SolidWorks", "AutoCAD", "MATLAB", "3D Printers", "CNC Machines"],
+    "sub_disciplines": ["Robotics & Mechatronics", "Automotive Engineering", "Aerospace Engineering", "HVAC Systems"],
+    "student_reality": "You will spend a lot of time in workshops and labs. It is very hands-on but requires a deep understanding of physics."
   },
   {
     "id": 13,
@@ -209,8 +229,7 @@
     "difficulty_level": "Medium",
     "learning_roadmap": ["Learn project management methodologies", "Get PMP or CAPM certification", "Master planning software", "Develop soft skills", "Gain experience in a specific industry"]
   },
- 
-   {
+  {
     "id": 16,
     "career_name": "UX/UI Designer",
     "description": "Focuses on the user experience and interface design of digital products.",
@@ -252,7 +271,7 @@
     "difficulty_level": "High",
     "learning_roadmap": ["Learn electronics and circuits", "Study mechanical design", "Master robotics programming (C++/Python)", "Build small robot projects", "Specialize in a subfield"]
   },
-    {
+  {
     "id": 19,
     "career_name": "Chef",
     "description": "Oversees the preparation of food in professional kitchens.",
@@ -292,7 +311,17 @@
     "salary_range": "High",
     "future_demand": "High",
     "difficulty_level": "High",
-    "learning_roadmap": ["Master electromagnetism and circuits", "Learn PCB design tools", "Study power systems", "Gain experience with microcontrollers", "Pursue PE certification"]
+    "learning_roadmap": ["Master electromagnetism and circuits", "Learn PCB design tools", "Study power systems", "Gain experience with microcontrollers", "Pursue PE certification"],
+    "core_philosophy": "Electrical Engineering is the study of electricity, electronics, and electromagnetism. It powers the modern world, from the smallest microchip to the largest power grid.",
+    "curriculum": [
+      "Circuit Analysis: The study of electrical networks.",
+      "Electromagnetics: The study of electric and magnetic fields.",
+      "Signal Processing: Analyzing and modifying signals.",
+      "Digital Systems: Designing logic circuits and microprocessors."
+    ],
+    "tools_software": ["Oscilloscopes", "Multimeters", "Altium Designer", "Eagle PCB", "MATLAB"],
+    "sub_disciplines": ["Power Engineering", "Telecommunications", "Microelectronics", "Control Systems"],
+    "student_reality": "Highly theoretical and mathematical. You deal with things you cannot see (electrons), so simulation and abstract thinking are key."
   },
   {
     "id": 22,
@@ -321,5 +350,53 @@
     "future_demand": "Medium",
     "difficulty_level": "High",
     "learning_roadmap": ["Complete pre-pharmacy coursework", "Pass the PCAT", "Earn a PharmD degree", "Complete a residency (optional)", "Pass the NAPLEX and MPJE"]
-  }
-]
+  },
+  {
+    "id": 24,
+    "career_name": "Civil Engineering",
+    "description": "Designs and oversees the construction of infrastructure projects.",
+    "responsibilities": "Design roads, bridges, and water systems; manage construction sites; ensure structural safety.",
+    "traits": { "technical": 9, "analytical": 10, "problem_solving": 9, "detail": 9, "organization": 8, "communication": 7 },
+    "required_skills": ["Structural Analysis", "AutoCAD", "Project Management", "Geotechnical Engineering", "Environmental Policy"],
+    "education_path": "Civil Engineering",
+    "work_environment": "Engineering firms, construction sites, government agencies",
+    "salary_range": "High",
+    "future_demand": "High",
+    "difficulty_level": "High",
+    "learning_roadmap": ["Master mechanics and materials", "Learn Civil 3D", "Study structural design", "Gain field experience", "Pursue PE certification"],
+    "core_philosophy": "Civil Engineering is the oldest engineering discipline. It focuses on the built environment—the infrastructure that society relies on, from roads and bridges to water systems and buildings.",
+    "curriculum": [
+      "Structural Analysis: Calculating how structures support loads.",
+      "Geotechnical Engineering: Studying soil and rock behavior.",
+      "Fluid Mechanics: Understanding water flow and pressure.",
+      "Environmental Engineering: Managing waste and water quality."
+    ],
+    "tools_software": ["AutoCAD Civil 3D", "SAP2000", "Revit", "GIS Software", "Total Stations"],
+    "sub_disciplines": ["Structural Engineering", "Transportation Engineering", "Water Resources", "Geotechnical Engineering"],
+    "student_reality": "A mix of office design work and field visits to construction sites. You'll deal with large-scale projects that have a direct impact on public safety."
+  },
+  {
+    "id": 25,
+    "career_name": "Chemical Engineering",
+    "description": "Develops processes for large-scale manufacturing of chemicals and products.",
+    "responsibilities": "Design chemical plants, optimize manufacturing processes, and ensure safety standards.",
+    "traits": { "technical": 10, "analytical": 10, "problem_solving": 9, "detail": 8, "risk": 7, "communication": 6 },
+    "required_skills": ["Process Simulation", "Thermodynamics", "Chemical Reactions", "Safety Management", "Mathematics"],
+    "education_path": "Chemical Engineering",
+    "work_environment": "Chemical plants, refineries, research labs, pharmaceutical companies",
+    "salary_range": "High",
+    "future_demand": "Medium",
+    "difficulty_level": "Very High",
+    "learning_roadmap": ["Master chemistry and physics", "Study thermodynamics and kinetics", "Learn process simulation tools", "Gain industrial experience", "Focus on safety certifications"],
+    "core_philosophy": "Chemical Engineering is the 'Engineering of Molecules.' It combines chemistry, physics, and biology with engineering principles to design processes for large-scale manufacturing of chemicals, fuels, and pharmaceuticals.",
+    "curriculum": [
+      "Mass & Energy Balances: Tracking materials and energy in a system.",
+      "Heat & Mass Transfer: Studying how energy and matter move.",
+      "Chemical Reaction Engineering: Designing reactors.",
+      "Process Control: Automating chemical processes."
+    ],
+    "tools_software": ["Aspen Plus", "HYSYS", "MATLAB", "Process Simulators", "Safety Analysis Tools"],
+    "sub_disciplines": ["Petrochemicals", "Pharmaceutical Engineering", "Food Processing", "Materials Science"],
+    "student_reality": "Heavy on math and thermodynamics. You'll often work in large industrial plants or research labs. Safety is the number one priority."
+  },
+ 
