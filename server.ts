@@ -11,7 +11,7 @@ dotenv.config();
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const db = new Database("career_advisor.db");
+const db = new Database("career_advisor_v2.db");
 
 // Initialize database
 db.exec(`
@@ -26,12 +26,20 @@ db.exec(`
     id INTEGER PRIMARY KEY,
     career_name TEXT,
     description TEXT,
+    responsibilities TEXT,
     traits JSON,
     required_skills JSON,
     education_path TEXT,
+    work_environment TEXT,
     salary_range TEXT,
     future_demand TEXT,
-    learning_roadmap JSON
+    difficulty_level TEXT,
+    learning_roadmap JSON,
+    core_philosophy TEXT,
+    curriculum JSON,
+    tools_software JSON,
+    sub_disciplines JSON,
+    student_reality JSON
   );
 
   CREATE TABLE IF NOT EXISTS user_results (
@@ -59,20 +67,28 @@ const seedData = () => {
   if (careerCount.count === 0) {
     const careers = JSON.parse(fs.readFileSync(path.join(__dirname, "datasets/career_profiles.json"), "utf8"));
     const insert = db.prepare(`
-      INSERT INTO career_profiles (id, career_name, description, traits, required_skills, education_path, salary_range, future_demand, learning_roadmap)
-      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+      INSERT INTO career_profiles (id, career_name, description, responsibilities, traits, required_skills, education_path, work_environment, salary_range, future_demand, difficulty_level, learning_roadmap, core_philosophy, curriculum, tools_software, sub_disciplines, student_reality)
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     `);
     for (const career of careers) {
       insert.run(
         career.id,
         career.career_name,
         career.description,
+        career.responsibilities || "",
         JSON.stringify(career.traits),
         JSON.stringify(career.required_skills),
         career.education_path,
+        career.work_environment || "",
         career.salary_range,
         career.future_demand,
-        JSON.stringify(career.learning_roadmap)
+        career.difficulty_level || "Medium",
+        JSON.stringify(career.learning_roadmap),
+        career.core_philosophy || null,
+        career.curriculum ? JSON.stringify(career.curriculum) : null,
+        career.tools_software ? JSON.stringify(career.tools_software) : null,
+        career.sub_disciplines ? JSON.stringify(career.sub_disciplines) : null,
+        career.student_reality ? JSON.stringify(career.student_reality) : null
       );
     }
     console.log("Seeded career profiles.");
@@ -80,7 +96,6 @@ const seedData = () => {
 };
 
 seedData();
-
 
 async function startServer() {
   const app = express();
@@ -178,6 +193,40 @@ async function startServer() {
     }
   });
 
+  app.get("/api/careers", (req, res) => {
+    try {
+      const careers = db.prepare("SELECT id, career_name FROM career_profiles").all();
+      res.json(careers);
+    } catch (error) {
+      res.status(500).json({ error: "Failed to load careers" });
+    }
+  });
+
+  app.get("/api/compare-careers", (req, res) => {
+    const { ids } = req.query; // Expecting comma-separated IDs
+    if (!ids) return res.status(400).json({ error: "IDs are required" });
+    
+    const idList = (ids as string).split(",");
+    try {
+      const careers = db.prepare(`SELECT * FROM career_profiles WHERE id IN (${idList.map(() => "?").join(",")})`).all(...idList) as any[];
+      
+      const formattedCareers = careers.map(career => ({
+        ...career,
+        traits: JSON.parse(career.traits),
+        required_skills: JSON.parse(career.required_skills),
+        learning_roadmap: JSON.parse(career.learning_roadmap),
+        curriculum: career.curriculum ? JSON.parse(career.curriculum) : null,
+        tools_software: career.tools_software ? JSON.parse(career.tools_software) : null,
+        sub_disciplines: career.sub_disciplines ? JSON.parse(career.sub_disciplines) : null,
+        student_reality: career.student_reality ? JSON.parse(career.student_reality) : null
+      }));
+      
+      res.json(formattedCareers);
+    } catch (error) {
+      res.status(500).json({ error: "Failed to compare careers" });
+    }
+  });
+
   app.get("/api/career-details/:id", (req, res) => {
     const { id } = req.params;
     const career = db.prepare("SELECT * FROM career_profiles WHERE id = ?").get(id) as any;
@@ -185,6 +234,10 @@ async function startServer() {
       career.traits = JSON.parse(career.traits);
       career.required_skills = JSON.parse(career.required_skills);
       career.learning_roadmap = JSON.parse(career.learning_roadmap);
+      career.curriculum = career.curriculum ? JSON.parse(career.curriculum) : null;
+      career.tools_software = career.tools_software ? JSON.parse(career.tools_software) : null;
+      career.sub_disciplines = career.sub_disciplines ? JSON.parse(career.sub_disciplines) : null;
+      career.student_reality = career.student_reality ? JSON.parse(career.student_reality) : null;
       res.json(career);
     } else {
       res.status(404).json({ error: "Career not found" });
@@ -198,6 +251,10 @@ async function startServer() {
       career.traits = JSON.parse(career.traits);
       career.required_skills = JSON.parse(career.required_skills);
       career.learning_roadmap = JSON.parse(career.learning_roadmap);
+      career.curriculum = career.curriculum ? JSON.parse(career.curriculum) : null;
+      career.tools_software = career.tools_software ? JSON.parse(career.tools_software) : null;
+      career.sub_disciplines = career.sub_disciplines ? JSON.parse(career.sub_disciplines) : null;
+      career.student_reality = career.student_reality ? JSON.parse(career.student_reality) : null;
       res.json(career);
     } else {
       // Return a partial object so the frontend knows it needs to generate via AI
@@ -217,7 +274,7 @@ async function startServer() {
   app.get("/api/career-fields/:field", (req, res) => {
     try {
       const fields = JSON.parse(fs.readFileSync(path.join(__dirname, "datasets/career_fields.json"), "utf8"));
-      const field = fields.find((f: any) => f.field.toLowerCase() === req.params.field.toLowerCase());
+      const field = fields.find((f: any) => (f.field_name || f.field).toLowerCase() === req.params.field.toLowerCase());
       if (field) {
         res.json(field);
       } else {
