@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useLocation, Link } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { ArrowLeft, Sparkles, BookOpen, TrendingUp, DollarSign, Briefcase, MessageSquare, CheckCircle2 } from 'lucide-react';
+import { ArrowLeft, Sparkles, BookOpen, TrendingUp, DollarSign, Briefcase, MessageSquare, CheckCircle2, Lightbulb, GraduationCap, Wrench, Layers, Users } from 'lucide-react';
 import { Career } from '../types';
 import { explainCareerFit, generateDetailedRoadmap } from '../services/geminiService';
 import ReactMarkdown from 'react-markdown';
@@ -133,6 +133,83 @@ export default function CareerDetailPage() {
 
         {/* AI Insights & Roadmap */}
         <div className="md:col-span-2 space-y-8">
+          {/* Detailed Career Info (if available) */}
+          {career.core_philosophy && (
+            <section className="bg-white border border-stone-200 rounded-[2.5rem] p-10 md:p-12 shadow-sm space-y-12">
+              <div className="space-y-4">
+                <h2 className="text-2xl font-bold flex items-center text-stone-900">
+                  <Lightbulb className="mr-3 text-amber-500 w-6 h-6" />
+                  The Core Philosophy
+                </h2>
+                <p className="text-lg text-stone-600 leading-relaxed italic">
+                  "{career.core_philosophy}"
+                </p>
+              </div>
+
+              {career.curriculum && (
+                <div className="space-y-6">
+                  <h3 className="text-xl font-bold flex items-center text-stone-900">
+                    <GraduationCap className="mr-3 text-blue-500 w-6 h-6" />
+                    The Curriculum (What You Will Study)
+                  </h3>
+                  <div className="grid sm:grid-cols-2 gap-4">
+                    {career.curriculum.map((item, idx) => (
+                      <div key={idx} className="p-4 bg-stone-50 rounded-2xl border border-stone-100">
+                        <div className="font-bold text-stone-900 mb-1">{item.split(':')[0]}</div>
+                        <div className="text-sm text-stone-600">{item.split(':')[1]}</div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {career.tools_software && (
+                <div className="space-y-6">
+                  <h3 className="text-xl font-bold flex items-center text-stone-900">
+                    <Wrench className="mr-3 text-stone-500 w-6 h-6" />
+                    Essential Tools & Software
+                  </h3>
+                  <div className="flex flex-wrap gap-3">
+                    {career.tools_software.map((tool, idx) => (
+                      <span key={idx} className="px-4 py-2 bg-stone-100 text-stone-700 rounded-xl font-medium text-sm">
+                        {tool}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {career.sub_disciplines && (
+                <div className="space-y-6">
+                  <h3 className="text-xl font-bold flex items-center text-stone-900">
+                    <Layers className="mr-3 text-purple-500 w-6 h-6" />
+                    Major Sub-disciplines
+                  </h3>
+                  <ul className="grid sm:grid-cols-2 gap-3">
+                    {career.sub_disciplines.map((sub, idx) => (
+                      <li key={idx} className="flex items-center text-stone-600">
+                        <div className="w-1.5 h-1.5 bg-purple-400 rounded-full mr-3" />
+                        {sub}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {career.student_reality && (
+                <div className="p-8 bg-amber-50 rounded-3xl border border-amber-100 space-y-4">
+                  <h3 className="text-xl font-bold flex items-center text-amber-900">
+                    <Users className="mr-3 text-amber-600 w-6 h-6" />
+                    The Student Reality
+                  </h3>
+                  <p className="text-amber-900/80 leading-relaxed">
+                    {career.student_reality}
+                  </p>
+                </div>
+              )}
+            </section>
+          )}
+
           {/* AI Fit Explanation */}
           <section className="bg-white border border-stone-200 rounded-[2.5rem] p-10 md:p-12 shadow-sm relative overflow-hidden">
             <div className="absolute top-0 right-0 p-6 opacity-10">
