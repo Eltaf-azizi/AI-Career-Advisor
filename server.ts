@@ -25,6 +25,7 @@ db.exec(`
   CREATE TABLE IF NOT EXISTS career_profiles (
     id INTEGER PRIMARY KEY,
     career_name TEXT,
+    tagline TEXT,
     description TEXT,
     responsibilities TEXT,
     traits JSON,
@@ -67,13 +68,14 @@ const seedData = () => {
   if (careerCount.count === 0) {
     const careers = JSON.parse(fs.readFileSync(path.join(__dirname, "datasets/career_profiles.json"), "utf8"));
     const insert = db.prepare(`
-      INSERT INTO career_profiles (id, career_name, description, responsibilities, traits, required_skills, education_path, work_environment, salary_range, future_demand, difficulty_level, learning_roadmap, core_philosophy, curriculum, tools_software, sub_disciplines, student_reality)
-      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+      INSERT INTO career_profiles (id, career_name, tagline, description, responsibilities, traits, required_skills, education_path, work_environment, salary_range, future_demand, difficulty_level, learning_roadmap, core_philosophy, curriculum, tools_software, sub_disciplines, student_reality)
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     `);
     for (const career of careers) {
       insert.run(
         career.id,
         career.career_name,
+        career.tagline || null,
         career.description,
         career.responsibilities || "",
         JSON.stringify(career.traits),
