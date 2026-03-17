@@ -1,9 +1,10 @@
 [
   {
     "id": 1,
-    "career_name": "AI Engineer",
-    "description": "Designs artificial intelligence systems that learn from data.",
-    "responsibilities": "Develop AI models, manage data pipelines, and implement machine learning algorithms.",
+    "career_name": "AI Engineering",
+    "tagline": "Architecting Intelligence: Designing systems that learn, reason, and evolve.",
+    "description": "AI Engineering is the discipline of building robust, scalable, and ethical artificial intelligence systems that solve complex real-world problems.",
+    "responsibilities": "Develop production-ready AI models, manage complex data pipelines, and ensure algorithmic fairness and transparency.",
     "traits": { "analytical": 9, "technical": 10, "creativity": 7, "communication": 5, "leadership": 4, "problem_solving": 9, "detail": 8 },
     "required_skills": ["Python", "Machine Learning", "Deep Learning", "Statistics", "Data Engineering"],
     "education_path": "Computer Science / AI / Data Science",
@@ -11,13 +12,24 @@
     "salary_range": "High",
     "future_demand": "Very High",
     "difficulty_level": "High",
-    "learning_roadmap": ["Learn Python", "Study mathematics for machine learning", "Learn machine learning algorithms", "Learn deep learning", "Build AI projects"]
+    "learning_roadmap": [],
+    "core_philosophy": "AI Engineering is the discipline of building robust, scalable, and ethical artificial intelligence systems. It focuses on the transition from experimental models to production-ready software that can solve complex real-world problems.",
+    "curriculum": [
+      "Machine Learning: The mathematical foundation of systems that learn from data.",
+      "Deep Learning & Neural Networks: Designing complex architectures for pattern recognition.",
+      "Natural Language Processing: Enabling machines to understand and generate human language.",
+      "AI Ethics & Safety: Ensuring algorithmic fairness, transparency, and security."
+    ],
+    "tools_software": ["PyTorch/TensorFlow", "Scikit-learn", "Hugging Face", "NVIDIA CUDA", "Jupyter Notebooks", "MLflow"],
+    "sub_disciplines": ["Computer Vision", "Natural Language Processing", "Reinforcement Learning", "Generative AI", "Edge AI"],
+    "student_reality": "A constant cycle of experimentation, failure, and optimization. You must have a deep love for mathematics and the patience to tune hyperparameters for days. It is at the absolute cutting edge of technology."
   },
   {
     "id": 2,
-    "career_name": "Data Scientist",
-    "description": "Analyzes complex data sets to help organizations make better decisions.",
-    "responsibilities": "Clean and analyze data, build predictive models, and present insights to stakeholders.",
+    "career_name": "Data Science",
+    "tagline": "The Alchemy of Data: Turning raw information into strategic intelligence.",
+    "description": "Data Science is the intersection of statistics, computer science, and domain expertise, used to extract meaningful patterns from complex datasets.",
+    "responsibilities": "Analyze massive datasets, build predictive models, and communicate strategic insights to drive evidence-based decision-making.",
     "traits": { "analytical": 10, "technical": 8, "creativity": 6, "communication": 7, "leadership": 5, "problem_solving": 8, "detail": 9 },
     "required_skills": ["R/Python", "SQL", "Data Visualization", "Statistical Modeling", "Big Data Tools"],
     "education_path": "Statistics / Mathematics / Data Science",
@@ -25,7 +37,17 @@
     "salary_range": "High",
     "future_demand": "High",
     "difficulty_level": "Medium to High",
-    "learning_roadmap": ["Master SQL", "Learn Python for Data Analysis", "Study Statistics", "Learn Data Visualization libraries", "Practice with real-world datasets"]
+    "learning_roadmap": [],
+    "core_philosophy": "Data Science is the intersection of statistics, computer science, and domain expertise. It is the art of extracting meaningful patterns from noise to drive evidence-based decision-making in every sector of society.",
+    "curriculum": [
+      "Statistical Inference: Using data to make valid conclusions about populations.",
+      "Predictive Modeling: Building algorithms that forecast future trends and behaviors.",
+      "Data Visualization: Communicating complex insights through intuitive visual narratives.",
+      "Big Data Engineering: Managing and processing massive datasets at scale."
+    ],
+    "tools_software": ["Python/R", "SQL", "Tableau/PowerBI", "Apache Spark", "Pandas/NumPy", "Snowflake"],
+    "sub_disciplines": ["Business Intelligence", "Quantitative Finance", "Bioinformatics", "Marketing Analytics", "Social Data Science"],
+    "student_reality": "Data cleaning takes up 80% of your time. You must be a storyteller as much as a mathematician, translating complex numbers into actionable business strategies."
   },
   {
     "id": 3,
@@ -44,8 +66,9 @@
   {
     "id": 4,
     "career_name": "Software Engineering",
-    "description": "Develops computer applications and systems that allow people to perform specific tasks.",
-    "responsibilities": "Write code, debug software, and collaborate with teams to build digital products.",
+    "tagline": "Architecting the Digital Frontier: Building scalable and resilient systems.",
+    "description": "Software Engineering is the application of engineering principles to software development, focusing on the design, maintenance, and reliability of complex digital systems.",
+    "responsibilities": "Design system architectures, develop scalable software solutions, and ensure system reliability through rigorous engineering practices.",
     "traits": { "technical": 10, "analytical": 8, "problem_solving": 9, "detail": 7, "creativity": 7, "communication": 6 },
     "required_skills": ["JavaScript/TypeScript", "React/Node.js", "Database Management", "Git", "System Design"],
     "education_path": "Computer Science / Software Engineering",
@@ -53,17 +76,17 @@
     "salary_range": "High",
     "future_demand": "Very High",
     "difficulty_level": "Medium",
-    "learning_roadmap": ["Learn HTML/CSS/JS", "Master a framework like React", "Learn backend development", "Understand databases", "Contribute to open source"],
-    "core_philosophy": "Software Engineering is about applying engineering principles to software development. It's not just coding; it's about designing scalable, maintainable, and reliable systems.",
+    "learning_roadmap": [],
+    "core_philosophy": "Software Engineering is the application of engineering principles to software development. It moves beyond simple coding to focus on the design, maintenance, and reliability of complex digital systems that power our modern life.",
     "curriculum": [
-      "Data Structures & Algorithms: Organizing and processing data efficiently.",
-      "Software Architecture: Designing high-level structures of software systems.",
-      "Operating Systems: Understanding how software interacts with hardware.",
-      "Databases: Managing and querying data."
+      "Data Structures & Algorithms: The science of organizing and processing data efficiently.",
+      "Software Architecture: Designing the high-level structure and patterns of software systems.",
+      "Operating Systems: Understanding the interface between software and hardware.",
+      "Database Systems: Managing, querying, and optimizing large-scale data storage."
     ],
-    "tools_software": ["Git/GitHub", "Docker/Kubernetes", "VS Code", "Jira/Confluence", "Cloud Platforms (AWS/Azure)"],
-    "sub_disciplines": ["Full-stack Development", "Mobile App Development", "DevOps", "Cybersecurity"],
-    "student_reality": "Constant learning is required as technologies change rapidly. You'll spend a lot of time debugging and reading documentation."
+    "tools_software": ["Git/GitHub", "Docker/Kubernetes", "VS Code", "Jira", "Cloud Platforms (AWS/Azure)", "Postman"],
+    "sub_disciplines": ["Full-stack Development", "Mobile Systems", "DevOps & SRE", "Cybersecurity", "Cloud Architecture"],
+    "student_reality": "The pace of change is relentless. You must be prepared for continuous learning as technologies evolve. Much of your time will be spent in deep focus, debugging, and reading technical documentation."
   },
   {
     "id": 5,
@@ -123,9 +146,10 @@
   },
   {
     "id": 9,
-    "career_name": "Cybersecurity Analyst",
-    "description": "Protects an organization's computer networks and systems from cyberattacks.",
-    "responsibilities": "Monitor networks for security breaches, install firewalls, and conduct penetration tests.",
+    "career_name": "Cybersecurity Engineering",
+    "tagline": "The Digital Shield: Protecting the integrity of the global information network.",
+    "description": "Cybersecurity involves defending computer systems and networks from malicious attacks and ensuring the integrity of global information.",
+    "responsibilities": "Monitor networks for breaches, conduct ethical hacking, and implement robust cryptographic defenses.",
     "traits": { "technical": 10, "analytical": 9, "detail": 10, "problem_solving": 9, "risk": 7, "communication": 5 },
     "required_skills": ["Network Security", "Ethical Hacking", "Incident Response", "Cryptography", "Security Auditing"],
     "education_path": "Cybersecurity / Computer Science / IT",
@@ -133,7 +157,17 @@
     "salary_range": "High",
     "future_demand": "Very High",
     "difficulty_level": "High",
-    "learning_roadmap": ["Learn networking basics", "Study operating systems", "Get CompTIA Security+ certification", "Practice ethical hacking", "Stay updated on latest threats"]
+    "learning_roadmap": [],
+    "core_philosophy": "Cybersecurity is the practice of defending computers, servers, mobile devices, electronic systems, networks, and data from malicious attacks. it is a continuous game of cat-and-mouse against evolving digital threats.",
+    "curriculum": [
+      "Network Security: Securing the communication channels between systems.",
+      "Ethical Hacking & Penetration Testing: Identifying vulnerabilities before attackers do.",
+      "Cryptography: The science of securing information through mathematical encryption.",
+      "Incident Response: Managing and mitigating the impact of security breaches."
+    ],
+    "tools_software": ["Wireshark", "Metasploit", "Burp Suite", "Splunk", "Kali Linux", "Nmap"],
+    "sub_disciplines": ["Cloud Security", "Forensics", "Application Security", "Identity & Access Management", "Governance, Risk & Compliance"],
+    "student_reality": "High-pressure and high-stakes. You must think like an attacker to defend like a professional. It requires constant vigilance and a commitment to lifelong learning as threats evolve daily."
   },
   {
     "id": 10,
@@ -165,9 +199,10 @@
   },
   {
     "id": 12,
-    "career_name": "Mechanical Engineer",
-    "description": "Designs, develops, builds, and tests mechanical devices.",
-    "responsibilities": "Design mechanical systems, create prototypes, and oversee manufacturing processes.",
+    "career_name": "Mechanical Engineering",
+    "tagline": "The Jack of All Trades: If it moves, a Mechanical Engineer designed it.",
+    "description": "Mechanical Engineering is one of the broadest engineering disciplines, focusing on the design, analysis, and manufacturing of mechanical systems.",
+    "responsibilities": "Design mechanical devices, analyze thermal systems, and oversee complex manufacturing processes.",
     "traits": { "technical": 10, "analytical": 9, "problem_solving": 9, "detail": 8, "organization": 7, "creativity": 6 },
     "required_skills": ["CAD Software", "Thermodynamics", "Materials Science", "Robotics", "Manufacturing Processes"],
     "education_path": "Mechanical Engineering",
@@ -175,17 +210,17 @@
     "salary_range": "High",
     "future_demand": "Medium",
     "difficulty_level": "High",
-    "learning_roadmap": ["Master physics and calculus", "Learn CAD tools", "Study mechanics and materials", "Gain hands-on experience", "Pursue FE/PE certification"],
-    "core_philosophy": "Mechanical Engineering is perhaps the broadest of all engineering disciplines. It is based on the principle that if something moves or uses energy, a mechanical engineer designed it. It is the 'Jack of all Trades' engineering field.",
+    "learning_roadmap": [],
+    "core_philosophy": "Mechanical Engineering is the broadest of all engineering disciplines. It is based on the principle that if something moves or uses energy, a mechanical engineer designed it. It is the fundamental field that bridges physics and the physical world.",
     "curriculum": [
-      "Statics: The study of forces on non-moving objects.",
-      "Dynamics: The study of forces on moving objects.",
-      "Strength of Materials: Understanding how materials deform and break under stress.",
-      "Thermodynamics: The study of energy conversion."
+      "Statics & Dynamics: The study of forces on non-moving and moving objects.",
+      "Thermodynamics: The science of energy conversion, heat, and work.",
+      "Fluid Mechanics: Understanding how liquids and gases behave under force.",
+      "Materials Science: Analyzing how metals, polymers, and composites perform under stress."
     ],
-    "tools_software": ["SolidWorks", "AutoCAD", "MATLAB", "3D Printers", "CNC Machines"],
-    "sub_disciplines": ["Robotics & Mechatronics", "Automotive Engineering", "Aerospace Engineering", "HVAC Systems"],
-    "student_reality": "You will spend a lot of time in workshops and labs. It is very hands-on but requires a deep understanding of physics."
+    "tools_software": ["SolidWorks", "AutoCAD", "MATLAB", "ANSYS", "3D Printers", "CNC Machines"],
+    "sub_disciplines": ["Robotics & Mechatronics", "Automotive Engineering", "Aerospace Systems", "HVAC & Energy Systems", "Manufacturing & Industrial Design"],
+    "student_reality": "Expect a heavy focus on physics and calculus. You will spend significant time in workshops and labs, moving from theoretical equations to physical prototypes. It is a rigorous, hands-on discipline."
   },
   {
     "id": 13,
@@ -259,9 +294,10 @@
   },
   {
     "id": 18,
-    "career_name": "Robotics Engineer",
-    "description": "Designs, builds, and maintains robots.",
-    "responsibilities": "Develop robotic control systems, design mechanical components, and test robotic prototypes.",
+    "career_name": "Robotics Engineering",
+    "tagline": "The Future of Autonomy: Designing intelligent machines that interact with the world.",
+    "description": "Robotics Engineering is the intersection of mechanical, electrical, and computer engineering, focused on creating autonomous machines.",
+    "responsibilities": "Develop robotic control systems, design mechanical components, and implement perception algorithms.",
     "traits": { "technical": 10, "analytical": 9, "problem_solving": 10, "creativity": 8, "detail": 8, "risk": 6 },
     "required_skills": ["Robotics Programming", "Mechanical Design", "Electronics", "Control Systems", "AI Basics"],
     "education_path": "Robotics / Mechatronics / Mechanical Engineering",
@@ -269,7 +305,17 @@
     "salary_range": "High",
     "future_demand": "High",
     "difficulty_level": "High",
-    "learning_roadmap": ["Learn electronics and circuits", "Study mechanical design", "Master robotics programming (C++/Python)", "Build small robot projects", "Specialize in a subfield"]
+    "learning_roadmap": [],
+    "core_philosophy": "Robotics Engineering is the intersection of mechanical, electrical, and computer engineering. It focuses on creating autonomous or semi-autonomous machines that can sense, think, and act in physical environments.",
+    "curriculum": [
+      "Robotic Kinematics: The mathematical study of the motion of robotic arms and legs.",
+      "Control Theory: Designing algorithms that allow robots to move precisely and safely.",
+      "Computer Vision: Enabling robots to perceive and understand their surroundings.",
+      "Embedded Systems: Programming the microcontrollers that serve as the robot's brain."
+    ],
+    "tools_software": ["ROS (Robot Operating System)", "Gazebo", "SolidWorks", "MATLAB", "Python/C++", "Arduino/Raspberry Pi"],
+    "sub_disciplines": ["Industrial Automation", "Autonomous Vehicles", "Surgical Robotics", "Human-Robot Interaction", "Swarm Robotics"],
+    "student_reality": "A highly multidisciplinary journey. You must be comfortable working across hardware and software boundaries. It involves a lot of trial and error, testing, and iterative design."
   },
   {
     "id": 19,
@@ -301,9 +347,10 @@
   },
   {
     "id": 21,
-    "career_name": "Electrical Engineer",
-    "description": "Designs and develops electrical systems and equipment.",
-    "responsibilities": "Design electrical circuits, test electronic components, and oversee system installations.",
+    "career_name": "Electrical Engineering",
+    "tagline": "Powering the Modern World: From microchips to global energy grids.",
+    "description": "Electrical Engineering involves the study and application of electricity, electronics, and electromagnetism to power modern civilization.",
+    "responsibilities": "Design electrical circuits, develop power systems, and process complex signals for information transmission.",
     "traits": { "technical": 10, "analytical": 9, "problem_solving": 9, "detail": 9, "organization": 7, "creativity": 6 },
     "required_skills": ["Circuit Design", "Power Systems", "Signal Processing", "Microcontrollers", "MATLAB"],
     "education_path": "Electrical Engineering",
@@ -311,17 +358,17 @@
     "salary_range": "High",
     "future_demand": "High",
     "difficulty_level": "High",
-    "learning_roadmap": ["Master electromagnetism and circuits", "Learn PCB design tools", "Study power systems", "Gain experience with microcontrollers", "Pursue PE certification"],
-    "core_philosophy": "Electrical Engineering is the study of electricity, electronics, and electromagnetism. It powers the modern world, from the smallest microchip to the largest power grid.",
+    "learning_roadmap": [],
+    "core_philosophy": "Electrical Engineering is the study of electricity, electronics, and electromagnetism. It is the invisible force that powers modern civilization, focusing on the generation, transmission, and processing of energy and information.",
     "curriculum": [
-      "Circuit Analysis: The study of electrical networks.",
-      "Electromagnetics: The study of electric and magnetic fields.",
-      "Signal Processing: Analyzing and modifying signals.",
-      "Digital Systems: Designing logic circuits and microprocessors."
+      "Circuit Analysis: The fundamental study of electrical networks and components.",
+      "Electromagnetics: Analyzing electric and magnetic fields and their interactions.",
+      "Signal Processing: The mathematical manipulation of signals to extract or transmit information.",
+      "Control Systems: Designing systems that manage and regulate the behavior of other devices."
     ],
-    "tools_software": ["Oscilloscopes", "Multimeters", "Altium Designer", "Eagle PCB", "MATLAB"],
-    "sub_disciplines": ["Power Engineering", "Telecommunications", "Microelectronics", "Control Systems"],
-    "student_reality": "Highly theoretical and mathematical. You deal with things you cannot see (electrons), so simulation and abstract thinking are key."
+    "tools_software": ["Oscilloscopes", "Multimeters", "Altium Designer", "MATLAB/Simulink", "PSpice", "LabVIEW"],
+    "sub_disciplines": ["Power Engineering", "Telecommunications", "Microelectronics & VLSI", "Control Systems", "Renewable Energy Systems"],
+    "student_reality": "Highly theoretical and abstract. Since you deal with invisible forces (electrons), simulation and advanced mathematics are your primary tools. Precision and attention to detail are critical."
   },
   {
     "id": 22,
@@ -354,8 +401,9 @@
   {
     "id": 24,
     "career_name": "Civil Engineering",
-    "description": "Designs and oversees the construction of infrastructure projects.",
-    "responsibilities": "Design roads, bridges, and water systems; manage construction sites; ensure structural safety.",
+    "tagline": "Building the Foundation of Society: Designing the infrastructure of the future.",
+    "description": "Civil Engineering focuses on the built environment, including the design and construction of infrastructure projects like roads, bridges, and water systems.",
+    "responsibilities": "Design structural systems, manage large-scale construction projects, and ensure the safety and resilience of public infrastructure.",
     "traits": { "technical": 9, "analytical": 10, "problem_solving": 9, "detail": 9, "organization": 8, "communication": 7 },
     "required_skills": ["Structural Analysis", "AutoCAD", "Project Management", "Geotechnical Engineering", "Environmental Policy"],
     "education_path": "Civil Engineering",
@@ -363,23 +411,24 @@
     "salary_range": "High",
     "future_demand": "High",
     "difficulty_level": "High",
-    "learning_roadmap": ["Master mechanics and materials", "Learn Civil 3D", "Study structural design", "Gain field experience", "Pursue PE certification"],
-    "core_philosophy": "Civil Engineering is the oldest engineering discipline. It focuses on the built environment—the infrastructure that society relies on, from roads and bridges to water systems and buildings.",
+    "learning_roadmap": [],
+    "core_philosophy": "Civil Engineering is the oldest engineering discipline. It focuses on the built environment—the infrastructure that society relies on to function, ensuring safety, sustainability, and resilience in our cities and landscapes.",
     "curriculum": [
-      "Structural Analysis: Calculating how structures support loads.",
-      "Geotechnical Engineering: Studying soil and rock behavior.",
-      "Fluid Mechanics: Understanding water flow and pressure.",
-      "Environmental Engineering: Managing waste and water quality."
+      "Structural Analysis: Calculating how structures support loads and resist forces.",
+      "Geotechnical Engineering: Studying the behavior of soil and rock to support foundations.",
+      "Hydraulic Engineering: Managing water flow, pressure, and distribution systems.",
+      "Transportation Engineering: Designing efficient road, rail, and air transit networks."
     ],
-    "tools_software": ["AutoCAD Civil 3D", "SAP2000", "Revit", "GIS Software", "Total Stations"],
-    "sub_disciplines": ["Structural Engineering", "Transportation Engineering", "Water Resources", "Geotechnical Engineering"],
-    "student_reality": "A mix of office design work and field visits to construction sites. You'll deal with large-scale projects that have a direct impact on public safety."
+    "tools_software": ["AutoCAD Civil 3D", "SAP2000", "Revit", "ArcGIS", "Total Stations", "STAAD.Pro"],
+    "sub_disciplines": ["Structural Engineering", "Transportation Engineering", "Water Resources & Environmental", "Geotechnical Engineering", "Urban Planning"],
+    "student_reality": "A balance between complex office-based design and outdoor field visits. You will deal with large-scale projects where public safety is the absolute priority. It requires strong ethical and professional standards."
   },
   {
     "id": 25,
     "career_name": "Chemical Engineering",
-    "description": "Develops processes for large-scale manufacturing of chemicals and products.",
-    "responsibilities": "Design chemical plants, optimize manufacturing processes, and ensure safety standards.",
+    "tagline": "The Engineering of Molecules: Transforming raw materials into life-saving products.",
+    "description": "Chemical Engineering involves designing processes for large-scale manufacturing of chemicals, fuels, and pharmaceuticals.",
+    "responsibilities": "Optimize chemical manufacturing processes, design industrial reactors, and ensure rigorous safety standards.",
     "traits": { "technical": 10, "analytical": 10, "problem_solving": 9, "detail": 8, "risk": 7, "communication": 6 },
     "required_skills": ["Process Simulation", "Thermodynamics", "Chemical Reactions", "Safety Management", "Mathematics"],
     "education_path": "Chemical Engineering",
@@ -387,23 +436,24 @@
     "salary_range": "High",
     "future_demand": "Medium",
     "difficulty_level": "Very High",
-    "learning_roadmap": ["Master chemistry and physics", "Study thermodynamics and kinetics", "Learn process simulation tools", "Gain industrial experience", "Focus on safety certifications"],
-    "core_philosophy": "Chemical Engineering is the 'Engineering of Molecules.' It combines chemistry, physics, and biology with engineering principles to design processes for large-scale manufacturing of chemicals, fuels, and pharmaceuticals.",
+    "learning_roadmap": [],
+    "core_philosophy": "Chemical Engineering combines chemistry, physics, and biology with engineering principles to design processes for large-scale manufacturing. It is about taking laboratory-scale reactions and scaling them to industrial production.",
     "curriculum": [
-      "Mass & Energy Balances: Tracking materials and energy in a system.",
-      "Heat & Mass Transfer: Studying how energy and matter move.",
-      "Chemical Reaction Engineering: Designing reactors.",
-      "Process Control: Automating chemical processes."
+      "Mass & Energy Balances: The fundamental tracking of materials and energy in a system.",
+      "Heat & Mass Transfer: Studying how energy and matter move through industrial processes.",
+      "Chemical Reaction Engineering: Designing and optimizing chemical reactors.",
+      "Process Control: Using automation to maintain safety and efficiency in chemical plants."
     ],
-    "tools_software": ["Aspen Plus", "HYSYS", "MATLAB", "Process Simulators", "Safety Analysis Tools"],
-    "sub_disciplines": ["Petrochemicals", "Pharmaceutical Engineering", "Food Processing", "Materials Science"],
-    "student_reality": "Heavy on math and thermodynamics. You'll often work in large industrial plants or research labs. Safety is the number one priority."
+    "tools_software": ["Aspen Plus", "HYSYS", "MATLAB", "Process Simulators", "Safety Analysis Software", "Spectrometers"],
+    "sub_disciplines": ["Petrochemicals & Energy", "Pharmaceutical Engineering", "Food & Beverage Processing", "Materials Science", "Environmental Remediation"],
+    "student_reality": "Considered one of the most difficult engineering majors due to the intense focus on thermodynamics and complex math. Safety is the central pillar of the discipline. You will often work in industrial environments."
   },
   {
     "id": 26,
     "career_name": "Aerospace Engineering",
-    "description": "Designs and develops aircraft, spacecraft, and missiles.",
-    "responsibilities": "Design aerodynamic systems, test propulsion units, and oversee flight testing.",
+    "tagline": "Pushing the Boundaries of Flight: From the atmosphere to the stars.",
+    "description": "Aerospace Engineering is the study of flight within Earth's atmosphere and in space, focusing on high-precision systems and extreme environments.",
+    "responsibilities": "Design aerodynamic systems, develop propulsion units, and calculate orbital trajectories.",
     "traits": { "technical": 10, "analytical": 10, "problem_solving": 10, "detail": 10, "risk": 8, "creativity": 7 },
     "required_skills": ["Aerodynamics", "Propulsion Systems", "Orbital Mechanics", "CAD Software", "Structural Design"],
     "education_path": "Aerospace Engineering",
@@ -411,23 +461,24 @@
     "salary_range": "High",
     "future_demand": "High",
     "difficulty_level": "Very High",
-    "learning_roadmap": ["Master advanced physics and calculus", "Study aerodynamics and propulsion", "Learn aerospace simulation tools", "Participate in design competitions", "Pursue advanced degrees"],
-    "core_philosophy": "Aerospace Engineering is the study of flight—both within Earth's atmosphere and in space. It pushes the boundaries of speed, efficiency, and extreme environments.",
+    "learning_roadmap": [],
+    "core_philosophy": "Aerospace Engineering is the study of flight—both within Earth's atmosphere and in the vacuum of space. It is a high-precision field that deals with extreme environments, high speeds, and the ultimate challenges of physics.",
     "curriculum": [
-      "Aerodynamics: Studying how air flows over objects.",
-      "Propulsion: Designing engines for planes and rockets.",
-      "Orbital Mechanics: Calculating paths in space.",
-      "Flight Dynamics: Controlling aircraft motion."
+      "Aerodynamics: Studying how air flows over objects to generate lift and minimize drag.",
+      "Propulsion Systems: Designing engines for aircraft and rockets.",
+      "Orbital Mechanics: Calculating trajectories and orbits for spacecraft.",
+      "Flight Dynamics & Control: Managing the stability and maneuverability of vehicles in flight."
     ],
-    "tools_software": ["ANSYS Fluent", "CATIA", "MATLAB/Simulink", "Wind Tunnels", "Flight Simulators"],
-    "sub_disciplines": ["Aeronautics (Planes)", "Astronautics (Spacecraft)", "Avionics", "Structural Design"],
-    "student_reality": "Extremely high precision is required. You'll work with cutting-edge materials and technologies. It's a field for those who love high-stakes challenges."
+    "tools_software": ["ANSYS Fluent", "CATIA", "MATLAB/Simulink", "Wind Tunnels", "Flight Simulators", "STK (Systems Tool Kit)"],
+    "sub_disciplines": ["Aeronautics (Aircraft)", "Astronautics (Spacecraft)", "Avionics & Navigation", "Structural Design", "Satellite Systems"],
+    "student_reality": "Extremely high stakes with zero margin for error. You will work with the most advanced materials and technologies. It requires a deep passion for exploration and rigorous analytical thinking."
   },
   {
     "id": 27,
     "career_name": "Biomedical Engineering",
-    "description": "Applies engineering principles to medicine and biology for healthcare purposes.",
-    "responsibilities": "Design medical devices, develop artificial organs, and maintain medical equipment.",
+    "tagline": "Engineering for Life: Bridging the gap between technology and medicine.",
+    "description": "Biomedical Engineering applies engineering principles to healthcare, designing life-saving devices and diagnostic tools.",
+    "responsibilities": "Design medical devices, develop artificial organs, and maintain advanced healthcare equipment.",
     "traits": { "helping": 10, "technical": 9, "analytical": 9, "problem_solving": 9, "detail": 9, "social": 7 },
     "required_skills": ["Biomechanics", "Bioinstrumentation", "Tissue Engineering", "Medical Imaging", "Biology"],
     "education_path": "Biomedical Engineering",
@@ -435,16 +486,16 @@
     "salary_range": "High",
     "future_demand": "Very High",
     "difficulty_level": "High",
-    "learning_roadmap": ["Master biology and engineering basics", "Study biomechanics and bioelectronics", "Learn medical simulation tools", "Gain clinical or lab experience", "Stay updated on medical regulations"],
-    "core_philosophy": "Biomedical Engineering bridges the gap between engineering and medicine. It applies engineering principles to healthcare, designing life-saving devices like artificial organs, prosthetics, and medical imaging systems.",
+    "learning_roadmap": [],
+    "core_philosophy": "Biomedical Engineering applies engineering principles to healthcare. It is a multidisciplinary field that combines biology and medicine with engineering to design life-saving devices, artificial organs, and advanced diagnostic tools.",
     "curriculum": [
-      "Biomechanics: Studying forces on the human body.",
-      "Bioinstrumentation: Designing sensors for medical data.",
-      "Tissue Engineering: Growing biological substitutes.",
-      "Medical Imaging: Understanding MRI, CT, and X-ray tech."
+      "Biomechanics: Studying the mechanical forces acting on the human body and tissues.",
+      "Bioinstrumentation: Designing sensors and electronics to monitor biological data.",
+      "Tissue Engineering: Developing biological substitutes to restore or improve tissue function.",
+      "Medical Imaging: Understanding the physics and technology behind MRI, CT, and Ultrasound."
     ],
-    "tools_software": ["LabVIEW", "MATLAB", "COMSOL Multiphysics", "3D Bioprinters", "Medical Simulation Software"],
-    "sub_disciplines": ["Bioinformatics", "Genetic Engineering", "Prosthetics & Orthotics", "Medical Device Design"],
-    "student_reality": "You'll need a strong foundation in both biology and high-level engineering. It's a deeply rewarding field where your work directly saves lives."
+    "tools_software": ["LabVIEW", "MATLAB", "COMSOL Multiphysics", "3D Bioprinters", "Medical Simulation Software", "SolidWorks"],
+    "sub_disciplines": ["Bioinformatics", "Genetic Engineering", "Prosthetics & Orthotics", "Medical Device Design", "Neural Engineering"],
+    "student_reality": "Requires a dual mastery of biological sciences and high-level engineering. It is a deeply rewarding field where your designs have a direct, tangible impact on human health and longevity."
   }
 ]
