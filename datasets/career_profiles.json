@@ -554,5 +554,30 @@
     "sub_disciplines": ["General Surgery", "Orthopedic Surgery", "Neurosurgery", "Cardiothoracic Surgery", "Plastic/Reconstructive Surgery"],
     "student_reality": "'The Captain of the Ship': The surgeon is the leader of the operating room team. Physical Stamina: Surgeries can last 10-15 hours. Lifestyle: Surgeons often have early mornings and are on-call frequently. Immediate Results: Unlike general medicine, surgeons often see the fix immediately."
   },
-  
+  {
+    "id": 29,
+    "career_name": "Medical Research",
+    "tagline": "The Engine of Medical Progress: Discovering the knowledge that saves millions.",
+    "description": "Medical Research is dedicated to discovering new knowledge and understanding disease mechanisms to develop future treatments.",
+    "responsibilities": "Conduct laboratory experiments, analyze genetic data, and publish original research to advance medical science.",
+    "traits": { "analytical": 10, "technical": 9, "detail": 10, "problem_solving": 9, "creativity": 8, "persistence": 10 },
+    "required_skills": ["Molecular Biology", "Biochemistry", "Statistics", "Grant Writing", "Experimental Design"],
+    "education_path": "PhD in Biomedical Sciences",
+    "work_environment": "Research labs, universities, pharmaceutical companies",
+    "salary_range": "Medium to High",
+    "future_demand": "High",
+    "difficulty_level": "Very High",
+    "learning_roadmap": [],
+    "core_philosophy": "Medical Research (Biomedical Research) is the field dedicated to discovering new knowledge. It is about asking questions that have never been asked before. Without this field, there would be no new vaccines, no cancer treatments, and no understanding of how viruses spread.",
+    "curriculum": [
+      "Undergraduate: Biology, Biochemistry, or Molecular Biology.",
+      "Graduate School: PhD (Doctor of Philosophy) in a medical science field. This typically takes 5-7 years.",
+      "Coursework: Advanced genetics, immunology, statistics.",
+      "Dissertation: A massive original research project that must contribute new knowledge to the world.",
+      "Post-Doctoral Fellowship: Further specialized training before becoming a lead researcher."
+    ],
+    "tools_software": ["PCR machines", "Centrifuges", "Gel Electrophoresis", "Electron/Fluorescence microscopes", "Cell Culture Equipment", "Bioinformatics Software"],
+    "sub_disciplines": ["Academic Research", "Industry Research (R&D)", "Clinical Trials", "Epidemiology"],
+    "student_reality": "'Publish or Perish': Your career depends on getting your research published. Failure is Constant: Experiments fail 90% of the time. Funding Stress: Writing grants to get funding is a huge part of the job. Impact: Your work might save millions of lives in the future."
+  }
 ]
