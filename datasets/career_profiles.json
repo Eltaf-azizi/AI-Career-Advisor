@@ -132,9 +132,10 @@
   },
   {
     "id": 8,
-    "career_name": "Registered Nurse",
-    "description": "Provides and coordinates patient care.",
-    "responsibilities": "Administer medications, monitor patient health, and educate families.",
+    "career_name": "Nursing",
+    "tagline": "The Heart and Hands of Healthcare: Advocating for the patient through science and compassion.",
+    "description": "Nursing is a distinct scientific and holistic discipline focused on the human response to illness and the advocacy for patient needs.",
+    "responsibilities": "Diagnose patient needs, advocate for patient rights, and coordinate complex care plans in clinical environments.",
     "traits": { "helping": 10, "social": 8, "detail": 8, "technical": 7, "problem_solving": 7, "risk": 6 },
     "required_skills": ["Patient Care", "Medical Knowledge", "Communication", "Critical Thinking", "Compassion"],
     "education_path": "Nursing (BSN/ADN)",
@@ -142,7 +143,17 @@
     "salary_range": "Medium to High",
     "future_demand": "Very High",
     "difficulty_level": "Medium to High",
-    "learning_roadmap": ["Complete a nursing program", "Pass the NCLEX-RN exam", "Gain clinical experience", "Choose a specialty", "Pursue advanced certifications"]
+    "learning_roadmap": [],
+    "core_philosophy": "Nursing is not just 'assisting' doctors; it is a distinct scientific and holistic discipline. Nursing focuses on the response to illness. While doctors diagnose the disease, nurses diagnose the patient's needs (e.g., 'Risk for infection,' 'Impaired mobility'). They are the advocates for the patient when the patient cannot speak for themselves.",
+    "curriculum": [
+      "Undergraduate (BSN - 4 Years): Anatomy, Physiology, Microbiology, Psychology, Nutrition.",
+      "Nursing Theory: Learning nursing models (like Maslow’s hierarchy applied to healthcare).",
+      "Clinical Practicum: Hands-on training in hospitals. Starting with basic hygiene assistance and moving to IV insertion and medication administration.",
+      "NCLEX-RN: The national licensing exam."
+    ],
+    "tools_software": ["Stethoscope", "Blood Pressure Cuff", "Pulse Oximeter", "IV Start kits", "Foley catheters", "Wound care supplies", "Patient Lifts", "Telemetry Monitors"],
+    "sub_disciplines": ["Emergency Nursing", "Critical Care (ICU)", "Oncology Nursing", "Nurse Practitioner (NP)"],
+    "student_reality": "'The Eyes and Ears': Doctors rely on nurses to catch subtle changes in a patient's condition. If a nurse misses a sign, a patient can crash. Shift Work: Nurses typically work three 12-hour shifts a week. Emotional Intelligence: You deal with patients at their worst requiring calm and compassion."
   },
   {
     "id": 9,
@@ -372,9 +383,10 @@
   },
   {
     "id": 22,
-    "career_name": "Doctor",
-    "description": "Diagnoses and treats illnesses and injuries.",
-    "responsibilities": "Examine patients, prescribe medications, and perform medical procedures.",
+    "career_name": "General Medicine",
+    "tagline": "The Detective of the Human Body: Solving the puzzles of complex disease management.",
+    "description": "General Medicine is the foundation of healthcare, focusing on diagnosing complex conditions and managing chronic diseases over a lifetime.",
+    "responsibilities": "Diagnose multi-system conditions, manage chronic illnesses, and coordinate specialized care as the primary point of contact.",
     "traits": { "helping": 10, "analytical": 9, "detail": 10, "communication": 9, "problem_solving": 9, "social": 8 },
     "required_skills": ["Medical Diagnosis", "Patient Care", "Surgical Skills", "Pharmacology", "Clinical Research"],
     "education_path": "Medicine (MD/DO)",
@@ -382,13 +394,25 @@
     "salary_range": "Very High",
     "future_demand": "Very High",
     "difficulty_level": "Very High",
-    "learning_roadmap": ["Complete pre-med requirements", "Pass the MCAT", "Finish Medical School", "Complete Residency", "Get Board Certified"]
+    "learning_roadmap": [],
+    "core_philosophy": "General Medicine is the foundation of healthcare. Practitioners here are often the first point of contact for patients. Unlike specialists who focus on one organ or system, General Physicians (GPs) or Internists look at the whole patient. They specialize in diagnosing complex conditions that affect multiple body systems and managing chronic diseases over a lifetime.",
+    "curriculum": [
+      "Undergraduate: Pre-med (Biology, Chemistry, Physics).",
+      "Medical School (4 Years): Pre-Clinical: Pathology (how diseases work), Physiology, Pharmacology, Histology.",
+      "Clinical Rotations: Exposure to all major fields (Cardiology, Neurology, etc.).",
+      "Residency (3 Years): This is where you become a 'Doctor.' You train in Internal Medicine or Family Medicine, learning to manage patients in clinics and hospitals.",
+      "Board Certification: Rigorous exams to prove competency."
+    ],
+    "tools_software": ["Stethoscope", "Otoscope", "Ophthalmoscope", "Reflex hammer", "Tuning forks", "Point-of-Care Ultrasound (POCUS)", "Electronic Health Records (EHR)", "Lab Interpretation Software"],
+    "sub_disciplines": ["Family Medicine", "Internal Medicine", "Hospitalist", "Geriatrics"],
+    "student_reality": "The 'Cognitive Load': You must memorize thousands of symptoms and disease patterns. You are the detective solving puzzles without always knowing the answer. Relationship Building: You build relationships over decades. The 'Gatekeeper' Role: You act as the gatekeeper to specialists, requiring immense confidence and judgment."
   },
   {
     "id": 23,
-    "career_name": "Pharmacist",
-    "description": "Dispenses medications and provides health advice.",
-    "responsibilities": "Fill prescriptions, counsel patients on medication use, and monitor drug interactions.",
+    "career_name": "Pharmacy",
+    "tagline": "The Guardian of Drug Safety: Ensuring the science of medication serves the patient.",
+    "description": "Pharmacy is the science of medication, ensuring that treatments are effective and safe through expert knowledge of chemical interactions.",
+    "responsibilities": "Ensure medication safety, analyze drug interactions, and counsel patients on therapeutic outcomes.",
     "traits": { "detail": 10, "helping": 9, "analytical": 8, "communication": 8, "organization": 9, "technical": 7 },
     "required_skills": ["Pharmacology", "Patient Counseling", "Drug Interaction Analysis", "Pharmacy Management", "Accuracy"],
     "education_path": "Pharmacy (PharmD)",
@@ -396,7 +420,15 @@
     "salary_range": "High",
     "future_demand": "Medium",
     "difficulty_level": "High",
-    "learning_roadmap": ["Complete pre-pharmacy coursework", "Pass the PCAT", "Earn a PharmD degree", "Complete a residency (optional)", "Pass the NAPLEX and MPJE"]
+    "learning_roadmap": [],
+    "core_philosophy": "Pharmacy is the science of medication. Pharmacists are the experts on how chemicals interact with the human body. Their primary role is not just 'counting pills' but ensuring that the medication prescribed will cure the patient without killing them via interactions or side effects.",
+    "curriculum": [
+      "Undergraduate: Pre-Pharmacy (Chemistry heavy).",
+      "Pharmacy School (PharmD - 4 Years): Medicinal Chemistry, Pharmacology, Pharmacokinetics, Therapeutics."
+    ],
+    "tools_software": ["Counting Trays & Spatulas", "Automated Dispensing Machines", "Mortar and pestles", "Ointment mills", "Clinical Software (Lexicomp/Micromedex)"],
+    "sub_disciplines": ["Community Pharmacy", "Clinical Pharmacy", "Oncology Pharmacy", "Nuclear Pharmacy"],
+    "student_reality": "Memory Test: You must memorize thousands of generic and brand names, side effects, and dosing ranges. Retail vs. Clinical: The lifestyles are vastly different. Safety Responsibility: If a doctor prescribes a fatal dose and the pharmacist dispenses it, the pharmacist is liable. You are the final safety net."
   },
   {
     "id": 24,
@@ -497,5 +529,30 @@
     "tools_software": ["LabVIEW", "MATLAB", "COMSOL Multiphysics", "3D Bioprinters", "Medical Simulation Software", "SolidWorks"],
     "sub_disciplines": ["Bioinformatics", "Genetic Engineering", "Prosthetics & Orthotics", "Medical Device Design", "Neural Engineering"],
     "student_reality": "Requires a dual mastery of biological sciences and high-level engineering. It is a deeply rewarding field where your designs have a direct, tangible impact on human health and longevity."
-  }
+  },
+  {
+    "id": 28,
+    "career_name": "Surgery",
+    "tagline": "The Mechanics of the Human Body: High-precision physical intervention for immediate healing.",
+    "description": "Surgery is the branch of medicine that treats diseases, injuries, and deformities through manual and operative methods.",
+    "responsibilities": "Perform complex operative procedures, lead surgical teams, and manage post-operative patient recovery.",
+    "traits": { "technical": 10, "analytical": 10, "problem_solving": 10, "detail": 10, "risk": 9, "leadership": 10 },
+    "required_skills": ["Surgical Precision", "Anatomy", "Emergency Response", "Team Leadership", "Manual Dexterity"],
+    "education_path": "Medicine (MD/DO) + Surgical Residency",
+    "work_environment": "Operating rooms, hospitals, trauma centers",
+    "salary_range": "Very High",
+    "future_demand": "High",
+    "difficulty_level": "Very High",
+    "learning_roadmap": [],
+    "core_philosophy": "Surgery is the branch of medicine that treats diseases, injuries, and deformities by manual and operative methods. It is high-stakes, high-precision, and immediate. Surgeons fix problems physically—removing a tumor, fixing a broken bone, or transplanting an organ.",
+    "curriculum": [
+      "Medical School: Same foundation as General Medicine.",
+      "Residency (5-7+ Years): This is the longest and most grueling training. You start by learning to hold retractors and close skin, slowly progressing to performing complex procedures.",
+      "Fellowship (1-2 Years): Optional specialized training (e.g., specializing in hand surgery or pediatric heart surgery)."
+    ],
+    "tools_software": ["Hemostat", "Electrocautery", "Laparoscopy Systems", "Robotic Surgery (e.g., Da Vinci Systems)", "Sutures & Staples"],
+    "sub_disciplines": ["General Surgery", "Orthopedic Surgery", "Neurosurgery", "Cardiothoracic Surgery", "Plastic/Reconstructive Surgery"],
+    "student_reality": "'The Captain of the Ship': The surgeon is the leader of the operating room team. Physical Stamina: Surgeries can last 10-15 hours. Lifestyle: Surgeons often have early mornings and are on-call frequently. Immediate Results: Unlike general medicine, surgeons often see the fix immediately."
+  },
+  
 ]
