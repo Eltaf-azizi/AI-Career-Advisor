@@ -135,11 +135,11 @@
     "description": "Creative arts careers focus on self-expression and visual communication through various mediums, blending aesthetics with functionality.",
     "importance": "Arts and design enrich culture, improve user experiences, and provide powerful ways to communicate complex ideas and emotions.",
     "subfields": [
-      { "name": "Graphic Design", "description": "Creating visual content to communicate messages through typography and imagery." },
-      { "name": "UX/UI Design", "description": "Designing the look and feel of digital products to ensure they are user-friendly." },
-      { "name": "Fine Arts", "description": "Creating works primarily for their aesthetic or conceptual value, such as painting or sculpture." },
-      { "name": "Fashion Design", "description": "Designing clothing, accessories, and footwear." },
-      { "name": "Interior Design", "description": "Planning and furnishing the interiors of private homes and commercial buildings." }
+      { "name": "Graphic Design", "description": "The art of communication through visual content, solving problems using typography, imagery, and layout." },
+      { "name": "UX/UI Design", "description": "Designing digital products that are both beautiful and intuitive, balancing logic and functionality with visual style." },
+      { "name": "Fine Arts", "description": "Exploring the human condition and emotion through physical mediums for aesthetic or conceptual value." },
+      { "name": "Fashion Design", "description": "Applying aesthetics and natural beauty to clothing and accessories, blending artistic vision with engineering." },
+      { "name": "Interior Design", "description": "The science of understanding human behavior to create functional and safe spaces within a building." }
     ],
     "skills": [
       { "name": "Visual Creativity", "description": "Generating original ideas and translating them into visual forms." },
