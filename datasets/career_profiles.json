@@ -54,16 +54,29 @@
   {
     "id": 3,
     "career_name": "Graphic Designer",
-    "description": "Creates visual concepts to communicate ideas that inspire, inform, and captivate consumers.",
-    "responsibilities": "Design logos, layouts, and visual content for digital and print media.",
+    "tagline": "The Visual Translator",
+    "description": "Graphic Design is the art of communication through visual content. It is not just about making things 'look pretty'; it is about solving a problem.",
+    "responsibilities": "A graphic designer takes a complex message and uses typography, imagery, and layout to make it instantly understood by the viewer.",
     "traits": { "creativity": 10, "technical": 6, "communication": 7, "detail": 8, "social": 5, "analytical": 4 },
-    "required_skills": ["Adobe Creative Suite", "Typography", "Color Theory", "UI/UX Design", "Branding"],
+    "required_skills": ["Typography", "Color Theory", "Layout & Composition", "Branding & Identity", "Print Design"],
     "education_path": "Graphic Design / Fine Arts",
     "work_environment": "Design agencies, marketing departments, freelance",
     "salary_range": "Medium",
     "future_demand": "Medium",
     "difficulty_level": "Medium",
-    "learning_roadmap": ["Learn design principles", "Master Adobe Photoshop and Illustrator", "Build a portfolio", "Learn UI/UX basics", "Network with other designers"]
+    "learning_roadmap": ["Learn design principles", "Master Adobe Photoshop and Illustrator", "Build a portfolio", "Learn UI/UX basics", "Network with other designers"],
+    "core_philosophy": "Graphic Design is the art of communication through visual content. It is not just about making things 'look pretty'; it is about solving a problem. A graphic designer takes a complex message and uses typography, imagery, and layout to make it instantly understood by the viewer.",
+    "curriculum": [
+      "Typography: The art of arranging type (fonts) to make written language legible, readable, and appealing.",
+      "Color Theory: Understanding how colors interact and the psychology behind them (e.g., why red means 'stop' or 'hunger').",
+      "Layout & Composition: How to arrange elements on a page to guide the viewer's eye.",
+      "Branding & Identity: Creating the visual 'face' of a company (Logos, color palettes).",
+      "Print Design: Understanding margins, bleeds, and how designs translate to physical paper.",
+      "Design History: Studying movements like Bauhaus, Art Deco, and Modernism."
+    ],
+    "tools_software": ["Adobe Creative Cloud", "Adobe Illustrator", "Adobe Photoshop", "Adobe InDesign", "Graphics tablet (Wacom)", "High-color accuracy monitors"],
+    "sub_disciplines": ["Brand Designer", "Motion Graphics Designer", "Editorial Designer", "Packaging Designer"],
+    "student_reality": "Subjectivity: You might work hours on a design, but the client might say, 'I don't like blue.' You must learn not to take criticism personally. The 'Pitch': You spend a lot of time presenting and justifying why you made design choices, not just making them. Deadlines: It is deadline-driven. 'All-nighters' are common in agencies before a launch. Freelance Potential: This field has high potential for freelancing or remote work."
   },
   {
     "id": 4,
@@ -333,16 +346,28 @@
   {
     "id": 16,
     "career_name": "UX/UI Designer",
-    "description": "Focuses on the user experience and interface design of digital products.",
-    "responsibilities": "Conduct user research, create wireframes, and design high-fidelity interfaces.",
+    "tagline": "The Architect of Digital Experience",
+    "description": "UX/UI Design focuses on creating digital products (apps, websites) that are both beautiful and intuitive, balancing logic and functionality with visual style.",
+    "responsibilities": "Conduct user research, create wireframes, and design high-fidelity interfaces that respond to user needs.",
     "traits": { "creativity": 9, "technical": 7, "analytical": 8, "detail": 9, "social": 7, "communication": 8 },
-    "required_skills": ["Figma/Sketch", "User Research", "Prototyping", "Information Architecture", "Visual Design"],
+    "required_skills": ["Human-Computer Interaction", "User Research", "Wireframing & Prototyping", "Interaction Design", "Accessibility"],
     "education_path": "Design / HCI / Psychology",
     "work_environment": "Tech companies, design agencies, remote",
     "salary_range": "High",
     "future_demand": "Very High",
     "difficulty_level": "Medium",
-    "learning_roadmap": ["Learn design fundamentals", "Master Figma", "Study user psychology", "Build case studies", "Network with developers"]
+    "learning_roadmap": ["Learn design fundamentals", "Master Figma", "Study user psychology", "Build case studies", "Network with developers"],
+    "core_philosophy": "This field is split into two halves: UX (User Experience) focuses on how the product works (logic, flow, functionality), while UI (User Interface) focuses on how it looks (visual layout, buttons, style). Together, you design digital products that are both beautiful and intuitive.",
+    "curriculum": [
+      "Human-Computer Interaction (HCI): Understanding how humans interact with screens.",
+      "User Research: Interviewing users, creating surveys, and analyzing data to understand what people want.",
+      "Wireframing & Prototyping: Drawing the 'blueprints' of an app before it is built.",
+      "Interaction Design: How the app responds to your touch (animations, button clicks).",
+      "Accessibility: Designing for people with disabilities (color blindness, screen readers)."
+    ],
+    "tools_software": ["Figma", "Sketch", "Adobe XD", "InVision", "Principle", "Maze", "UserTesting.com"],
+    "sub_disciplines": ["UX Researcher", "UI Designer", "Product Designer", "Interaction Designer"],
+    "student_reality": "Data-Driven: Unlike Fine Arts, this is not about your 'expression.' It is about data. You must prove your design works better than the old one. High Demand: This is currently one of the most employable creative fields. Constant Learning: Technology changes fast. Collaboration: You work closely with developers (coders). You need to understand the limits of code so you don't design something that cannot be built."
   },
   {
     "id": 17,
