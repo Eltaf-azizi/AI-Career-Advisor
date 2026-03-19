@@ -661,4 +661,30 @@
     "sub_disciplines": ["Cloud Architect", "DevOps Engineer", "Cloud Security Engineer", "Site Reliability Engineer (SRE)"],
     "student_reality": "Responsibility: A typo in a script can accidentally delete an entire company's database. You must be extremely careful. On-Call Duty: If the cloud goes down at 3 AM, you are the one waking up to fix it. Certifications are King: In Cloud Computing, certifications (AWS Certified Solutions Architect, etc.) are arguably more important than degrees for getting hired. The 'New Normal': Almost every modern startup uses the cloud. This field has massive job security because companies are always moving away from physical hardware."
   },
+  {
+    "id": 31,
+    "career_name": "Operations Management",
+    "tagline": "The Engine Room of Business",
+    "description": "Operations focuses on the efficiency of production and delivery, ensuring products reach customers with minimal waste.",
+    "responsibilities": "Optimize workflows, manage supply chains, and oversee the physical production and distribution of goods.",
+    "traits": { "analytical": 9, "organization": 10, "problem_solving": 10, "technical": 8, "detail": 9, "communication": 7 },
+    "required_skills": ["Supply Chain Management", "Logistics", "Process Analysis", "Quality Control", "Procurement"],
+    "education_path": "Operations Management / Business Administration / Industrial Engineering",
+    "work_environment": "Factories, warehouses, corporate offices, global supply chain hubs",
+    "salary_range": "High",
+    "future_demand": "High",
+    "difficulty_level": "Medium to High",
+    "learning_roadmap": [],
+    "core_philosophy": "Operations is about the 'How.' Marketing promises the product, and Operations delivers it. It focuses on the efficiency of production and delivery. The goal is to minimize waste and maximize quality.",
+    "curriculum": [
+      "Supply Chain Management: The flow of goods from raw material to the customer.",
+      "Logistics: Transportation, warehousing, and inventory control.",
+      "Quality Management: Methodologies like Six Sigma and Lean (used to reduce errors).",
+      "Process Analysis: Mapping out workflows to find bottlenecks.",
+      "Procurement: Negotiating with suppliers to buy materials at the best price."
+    ],
+    "tools_software": ["SAP", "Oracle", "Fishbowl", "inFlow", "Visio", "Lucidchart", "Excel"],
+    "sub_disciplines": ["Supply Chain Manager", "Logistics Manager", "Operations Analyst", "Plant Manager"],
+    "student_reality": "Problem Solving: Something always goes wrong—a shipment is delayed, a machine breaks, a supplier fails. You are the firefighter. Tangible Results: Unlike some office jobs, you can physically see your work (e.g., a product shipping on time). High Pressure: Operations is often a cost center, so there is constant pressure to cut costs and speed up. Global Scale: In today's world, you are managing teams and suppliers across different time zones and cultures."
+  }
 ]
