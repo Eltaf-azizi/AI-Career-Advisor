@@ -98,17 +98,16 @@
     ],
     "future_outlook": "The demand for tech talent remains extremely high as every industry undergoes digital transformation, with AI and quantum computing representing the next frontiers."
   },
-  
   {
     "field_name": "Business and Entrepreneurship",
     "description": "Business careers involve the management, operation, and growth of organizations, focusing on value creation and commercial success.",
     "importance": "Business drives economic growth, creates jobs, and provides the products and services that society relies on every day.",
     "subfields": [
-      { "name": "Management", "description": "Leading teams and departments to achieve organizational goals." },
-      { "name": "Marketing", "description": "Promoting products and services to reach and engage customers." },
-      { "name": "Human Resources", "description": "Managing the recruitment, training, and well-being of employees." },
-      { "name": "Operations", "description": "Ensuring the efficient production and delivery of goods and services." },
-      { "name": "Entrepreneurship", "description": "Starting and scaling new business ventures from the ground up." }
+      { "name": "Management", "description": "The coordination and administration of tasks to achieve organizational goals efficiently." },
+      { "name": "Marketing", "description": "Identifying customer needs and creating value through strategic communication and positioning." },
+      { "name": "Human Resources (HR)", "description": "Strategic management of an organization's most valuable assets: its people." },
+      { "name": "Operations Management", "description": "Focusing on the efficiency of production and delivery to minimize waste." },
+      { "name": "Entrepreneurship", "description": "Designing, launching, and running a new business venture by identifying market gaps." }
     ],
     "skills": [
       { "name": "Leadership", "description": "Inspiring and guiding others toward a common vision." },
