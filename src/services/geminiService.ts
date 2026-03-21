@@ -1,7 +1,7 @@
 import { GoogleGenAI, Type } from "@google/genai";
 import { Career } from "../types";
 
-const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY || "" });
+const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY || "" });
 
 export const generateFullCareerDetails = async (careerName: string): Promise<Career> => {
   const prompt = `
@@ -57,6 +57,9 @@ export const generateFullCareerDetails = async (careerName: string): Promise<Car
       }
     });
     
+    if (!response.text) {
+      throw new Error("Empty response from Gemini");
+    }
     const data = JSON.parse(response.text);
     return { ...data, id: Math.floor(Math.random() * 1000000) }; // Random ID for generated careers
   } catch (error) {
@@ -64,7 +67,6 @@ export const generateFullCareerDetails = async (careerName: string): Promise<Car
     throw error;
   }
 };
-
 
 export const explainCareerFit = async (career: Career, userTraits: Record<string, number>) => {
   const prompt = `

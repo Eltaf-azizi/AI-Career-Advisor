@@ -4,7 +4,7 @@ import {
   ArrowLeftRight, Search, Info, Briefcase, 
   Zap, User, GraduationCap, MapPin, 
   DollarSign, TrendingUp, AlertTriangle,
-  ChevronDown, X
+  ChevronDown, X, LucideIcon
 } from 'lucide-react';
 import { Career } from '../types';
 
@@ -61,7 +61,7 @@ export default function CareerComparisonPage() {
     isTraits = false
   }: { 
     label: string, 
-    icon: any, 
+    icon: LucideIcon, 
     valA: any, 
     valB: any,
     isList?: boolean,
@@ -80,9 +80,9 @@ export default function CareerComparisonPage() {
         
         {showA && (
           <div className={`p-6 ${showB ? 'md:border-r' : ''} border-stone-100 bg-white`}>
-            {isList ? (
+            {isList && Array.isArray(valA) ? (
               <ul className="space-y-2">
-                {valA?.map((item: string, i: number) => (
+                {valA.map((item: string, i: number) => (
                   <li key={i} className="flex items-start text-stone-600 text-sm">
                     <span className="mr-2 text-emerald-500">•</span>
                     {item}
@@ -105,9 +105,9 @@ export default function CareerComparisonPage() {
 
         {showB && (
           <div className="p-6 bg-white">
-            {isList ? (
+            {isList && Array.isArray(valB) ? (
               <ul className="space-y-2">
-                {valB?.map((item: string, i: number) => (
+                {valB.map((item: string, i: number) => (
                   <li key={i} className="flex items-start text-stone-600 text-sm">
                     <span className="mr-2 text-emerald-500">•</span>
                     {item}
@@ -386,7 +386,7 @@ export default function CareerComparisonPage() {
               valA={careerA?.difficulty_level} 
               valB={careerB?.difficulty_level} 
             />
-                        {((careerA?.core_philosophy) || (careerB?.core_philosophy)) && (
+            {((careerA?.core_philosophy) || (careerB?.core_philosophy)) && (
               <ComparisonRow 
                 label="Core Philosophy" 
                 icon={Info} 
