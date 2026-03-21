@@ -386,6 +386,50 @@ export default function CareerComparisonPage() {
               valA={careerA?.difficulty_level} 
               valB={careerB?.difficulty_level} 
             />
+                        {((careerA?.core_philosophy) || (careerB?.core_philosophy)) && (
+              <ComparisonRow 
+                label="Core Philosophy" 
+                icon={Info} 
+                valA={careerA?.core_philosophy} 
+                valB={careerB?.core_philosophy} 
+              />
+            )}
+            {((careerA?.curriculum) || (careerB?.curriculum)) && (
+              <ComparisonRow 
+                label="Curriculum" 
+                icon={GraduationCap} 
+                valA={careerA?.curriculum} 
+                valB={careerB?.curriculum} 
+                isList
+              />
+            )}
+            {((careerA?.tools_software) || (careerB?.tools_software)) && (
+              <ComparisonRow 
+                label="Essential Tools" 
+                icon={Zap} 
+                valA={careerA?.tools_software} 
+                valB={careerB?.tools_software} 
+                isList
+              />
+            )}
+            {((careerA?.sub_disciplines) || (careerB?.sub_disciplines)) && (
+              <ComparisonRow 
+                label="Sub-Specialties" 
+                icon={Briefcase} 
+                valA={careerA?.sub_disciplines} 
+                valB={careerB?.sub_disciplines} 
+                isList
+              />
+            )}
+            {((careerA?.student_reality) || (careerB?.student_reality)) && (
+              <ComparisonRow 
+                label="Student Reality" 
+                icon={AlertTriangle} 
+                valA={careerA?.student_reality} 
+                valB={careerB?.student_reality} 
+                isList
+              />
+            )}
           </motion.div>
         ) : (
           <div className="flex flex-col items-center justify-center py-20 bg-stone-50 border-2 border-dashed border-stone-200 rounded-[2.5rem] text-stone-400 space-y-4">
