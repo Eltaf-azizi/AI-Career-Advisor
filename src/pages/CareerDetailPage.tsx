@@ -41,15 +41,15 @@ export default function CareerDetailPage() {
           explainCareerFit(career, userTraits),
           generateDetailedRoadmap(career)
         ]).then(([exp, road]) => {
-          setExplanation(exp);
-          setRoadmap(road);
+          setExplanation(exp || "Failed to generate explanation. Please try again later.");
+          setRoadmap(road || "Failed to generate roadmap. Please try again later.");
           setAiLoading(false);
         });
       } else {
         // Just generate roadmap if no user traits (manual exploration)
         setAiLoading(true);
         generateDetailedRoadmap(career).then(road => {
-          setRoadmap(road);
+          setRoadmap(road || "Failed to generate roadmap. Please try again later.");
           setExplanation(`Explore the exciting world of ${career.career_name}. This field offers diverse opportunities and a promising future.`);
           setAiLoading(false);
         });
