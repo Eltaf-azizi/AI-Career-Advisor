@@ -40,3 +40,30 @@ An AI-powered career guidance application that helps students discover and explo
 
    Get your API key from [Google AI Studio](https://aistudio.google.com/app/apikey)
 
+### Running the Project
+
+**Development mode** (with backend server):
+```bash
+npm run dev
+```
+
+**Production build**:
+```bash
+npm run build
+npm run preview
+```
+
+## Project Structure
+
+```
+├── src/
+│   ├── components/     # Reusable UI components
+│   ├── pages/          # Page components
+│   ├── services/       # API and AI services
+│   ├── types.ts        # TypeScript type definitions
+│   └── App.tsx         # Main application component
+├── server.ts           # Express backend server
+├── datasets/           # Career data JSON files
+└── dist/               # Production build output
+```
+
