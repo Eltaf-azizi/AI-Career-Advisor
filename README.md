@@ -10,3 +10,18 @@ An AI-powered career guidance application that helps students discover and explo
 - **Career Comparison** - Compare different careers side-by-side
 - **AI Chat** - Chat with an AI career mentor for personalized advice
 
+## Tech Stack
+
+- **Frontend**: React 19, React Router, Vite
+- **Backend**: Express.js, SQLite
+- **AI**: Google Gemini API
+- **Styling**: Tailwind CSS
+- **Animations**: Motion (Framer Motion)
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- npm or yarn
+
