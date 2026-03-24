@@ -25,3 +25,18 @@ An AI-powered career guidance application that helps students discover and explo
 - Node.js 18+
 - npm or yarn
 
+### Installation
+
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Create a `.env` file in the root directory:
+   ```
+   VITE_GEMINI_API_KEY=your_gemini_api_key
+   ```
+
+   Get your API key from [Google AI Studio](https://aistudio.google.com/app/apikey)
+
