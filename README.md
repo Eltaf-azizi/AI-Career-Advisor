@@ -67,3 +67,12 @@ npm run preview
 └── dist/               # Production build output
 ```
 
+## API Endpoints
+
+- `GET /api/careers` - List all careers
+- `GET /api/career-fields` - List all career fields
+- `GET /api/career-fields/:name` - Get careers in a specific field
+- `GET /api/career-details/:id` - Get detailed career information
+- `POST /api/save-results` - Save assessment results
+- `GET /api/results` - Get saved assessment results
+
