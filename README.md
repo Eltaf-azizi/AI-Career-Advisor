@@ -76,6 +76,13 @@ npm run preview
 - `POST /api/save-results` - Save assessment results
 - `GET /api/results` - Get saved assessment results
 
+## 🚀 Future Improvements
+ - Skill gap analyzer
+ - Resume analyzer
+ - University recommendations
+ - Job market integration
+ - Personalized learning plans
+
 ## 📌 Why This Project Matters
 
 This project solves a real-world problem faced by millions of students.
