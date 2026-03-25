@@ -76,6 +76,17 @@ npm run preview
 - `POST /api/save-results` - Save assessment results
 - `GET /api/results` - Get saved assessment results
 
+## 📌 Why This Project Matters
+
+This project solves a real-world problem faced by millions of students.
+
+It combines:
+
+ - AI
+ - Psychology
+ - Education
+ - Real-world career data
+
 ## ⭐ Contribute
 
 Contributions are welcome.
