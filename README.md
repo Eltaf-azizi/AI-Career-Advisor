@@ -76,3 +76,8 @@ npm run preview
 - `POST /api/save-results` - Save assessment results
 - `GET /api/results` - Get saved assessment results
 
+## ⭐ Contribute
+
+Contributions are welcome.
+
+If you have ideas to improve this project, feel free to open an issue or submit a pull request.
