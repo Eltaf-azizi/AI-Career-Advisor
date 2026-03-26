@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Career Adviser
+=======
+<h1 align="center">Career Adviser</h1>
+>>>>>>> 6a6067c6f9b9e67c82061f5ff3e6cff73780e432
 
 An AI-powered career guidance application that helps students discover and explore career paths based on their personality traits and interests.
 
@@ -76,4 +80,30 @@ npm run preview
 - `POST /api/save-results` - Save assessment results
 - `GET /api/results` - Get saved assessment results
 
+<<<<<<< HEAD
 
+=======
+## 🚀 Future Improvements
+ - Skill gap analyzer
+ - Resume analyzer
+ - University recommendations
+ - Job market integration
+ - Personalized learning plans
+
+## 📌 Why This Project Matters
+
+This project solves a real-world problem faced by millions of students.
+
+It combines:
+
+ - AI
+ - Psychology
+ - Education
+ - Real-world career data
+
+## ⭐ Contribute
+
+Contributions are welcome.
+
+If you have ideas to improve this project, feel free to open an issue or submit a pull request.
+>>>>>>> 6a6067c6f9b9e67c82061f5ff3e6cff73780e432
