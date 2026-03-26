@@ -266,7 +266,7 @@ async function startServer() {
 
   app.get("/api/career-fields", (req, res) => {
     try {
-      const fields = JSON.parse(fs.readFileSync(path.join(__dirname, "datasets/career_fields.json"), "utf8"));
+      const fields = JSON.parse(fs.readFileSync(path.join(__dirname, "datasets/career-feilds.json"), "utf8"));
       res.json(fields);
     } catch (error) {
       res.status(500).json({ error: "Failed to load career fields" });
@@ -275,7 +275,7 @@ async function startServer() {
 
   app.get("/api/career-fields/:field", (req, res) => {
     try {
-      const fields = JSON.parse(fs.readFileSync(path.join(__dirname, "datasets/career_fields.json"), "utf8"));
+      const fields = JSON.parse(fs.readFileSync(path.join(__dirname, "datasets/career-feilds.json"), "utf8"));
       const field = fields.find((f: any) => (f.field_name || f.field).toLowerCase() === req.params.field.toLowerCase());
       if (field) {
         res.json(field);

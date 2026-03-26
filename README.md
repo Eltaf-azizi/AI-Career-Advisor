@@ -1,1 +1,79 @@
-# AI-Career-Advisor
+# Career Adviser
+
+An AI-powered career guidance application that helps students discover and explore career paths based on their personality traits and interests.
+
+## Features
+
+- **Career Assessment** - Take a test to discover careers that match your personality traits
+- **Career Exploration** - Browse careers by field (Technology, Healthcare, Business, etc.)
+- **AI-Powered Insights** - Get personalized career explanations and learning roadmaps
+- **Career Comparison** - Compare different careers side-by-side
+- **AI Chat** - Chat with an AI career mentor for personalized advice
+
+## Tech Stack
+
+- **Frontend**: React 19, React Router, Vite
+- **Backend**: Express.js, SQLite
+- **AI**: Google Gemini API
+- **Styling**: Tailwind CSS
+- **Animations**: Motion (Framer Motion)
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- npm or yarn
+
+### Installation
+
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Create a `.env` file in the root directory:
+   ```
+   VITE_GEMINI_API_KEY=your_gemini_api_key
+   ```
+
+   Get your API key from [Google AI Studio](https://aistudio.google.com/app/apikey)
+
+### Running the Project
+
+**Development mode** (with backend server):
+```bash
+npm run dev
+```
+
+**Production build**:
+```bash
+npm run build
+npm run preview
+```
+
+## Project Structure
+
+```
+├── src/
+│   ├── components/     # Reusable UI components
+│   ├── pages/          # Page components
+│   ├── services/       # API and AI services
+│   ├── types.ts        # TypeScript type definitions
+│   └── App.tsx         # Main application component
+├── server.ts           # Express backend server
+├── datasets/           # Career data JSON files
+└── dist/               # Production build output
+```
+
+## API Endpoints
+
+- `GET /api/careers` - List all careers
+- `GET /api/career-fields` - List all career fields
+- `GET /api/career-fields/:name` - Get careers in a specific field
+- `GET /api/career-details/:id` - Get detailed career information
+- `POST /api/save-results` - Save assessment results
+- `GET /api/results` - Get saved assessment results
+
+
