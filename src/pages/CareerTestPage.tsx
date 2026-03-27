@@ -125,4 +125,66 @@ export default function CareerTestPage() {
         </div>
       </div>
 
+      {/* Question Card */}
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={currentQuestion?.id}
+          initial={{ opacity: 0, x: 20 }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: -20 }}
+          transition={{ duration: 0.3 }}
+          className="bg-white border border-stone-200 rounded-[2.5rem] p-8 md:p-12 shadow-sm"
+        >
+          {currentQuestion && (
+            <div className="space-y-8">
+              <div className="flex items-start space-x-4">
+                <div className="flex-shrink-0 w-10 h-10 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center font-bold">
+                  {currentIndex + 1}
+                </div>
+                <h2 className="text-xl md:text-2xl font-semibold text-stone-900 leading-relaxed">
+                  {currentQuestion.text}
+                </h2>
+              </div>
 
+              <div className="space-y-4">
+                <p className="text-sm font-bold text-stone-400 uppercase tracking-widest">
+                  How much does this describe you?
+                </p>
+                <div className="grid grid-cols-5 gap-3">
+                  {[
+                    { value: 1, label: 'Strongly Disagree' },
+                    { value: 2, label: 'Disagree' },
+                    { value: 3, label: 'Neutral' },
+                    { value: 4, label: 'Agree' },
+                    { value: 5, label: 'Strongly Agree' }
+                  ].map((option) => (
+                    <button
+                      key={option.value}
+                      onClick={() => handleAnswer(option.value)}
+                      className={`p-4 rounded-2xl text-center transition-all ${
+                        answers[currentQuestion.id] === option.value
+                          ? 'bg-emerald-600 text-white border-emerald-600'
+                          : 'bg-stone-50 text-stone-600 border-stone-200 hover:border-emerald-300 hover:bg-emerald-50'
+                      } border`}
+                    >
+                      <div className="text-2xl mb-1">{option.value}</div>
+                      <div className="text-xs font-medium">{option.label}</div>
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {answers[currentQuestion.id] && (
+                <motion.div 
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  className="flex items-center justify-center space-x-2 text-emerald-600"
+                >
+                  <CheckCircle2 className="w-5 h-5" />
+                  <span className="font-medium">Answer recorded</span>
+                </motion.div>
+              )}
+            </div>
+          )}
+        </motion.div>
+      </AnimatePresence>
