@@ -79,4 +79,50 @@ export default function CareerTestPage() {
     }
   };
 
-  
+  if (loading) return (
+    <div className="flex items-center justify-center min-h-[60vh]">
+      <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-emerald-600"></div>
+    </div>
+  );
+
+  return (
+    <div className="max-w-4xl mx-auto py-12">
+      {/* Header */}
+      <header className="text-center space-y-6 mb-12">
+        <motion.div
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          className="inline-flex items-center justify-center w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full"
+        >
+          <Brain className="w-8 h-8" />
+        </motion.div>
+        <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-stone-900">
+          Career Discovery Test
+        </h1>
+        <p className="text-stone-600 text-lg max-w-2xl mx-auto">
+          Answer these questions to discover your unique career profile. 
+          There are no right or wrong answers - be honest with yourself!
+        </p>
+      </header>
+
+      {/* Progress Bar */}
+      <div className="mb-8">
+        <div className="flex justify-between items-center mb-2">
+          <span className="text-sm font-medium text-stone-500">
+            Question {currentIndex + 1} of {questions.length}
+          </span>
+          <span className="text-sm font-bold text-emerald-600">
+            {answeredCount} / {questions.length} answered
+          </span>
+        </div>
+        <div className="h-3 bg-stone-100 rounded-full overflow-hidden">
+          <motion.div 
+            className="h-full bg-emerald-500 rounded-full"
+            initial={{ width: 0 }}
+            animate={{ width: `${progress}%` }}
+            transition={{ duration: 0.3 }}
+          />
+        </div>
+      </div>
+
+
