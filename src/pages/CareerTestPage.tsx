@@ -188,3 +188,64 @@ export default function CareerTestPage() {
           )}
         </motion.div>
       </AnimatePresence>
+
+      {/* Navigation */}
+      <div className="flex justify-between items-center mt-8">
+        <button
+          onClick={handlePrev}
+          disabled={currentIndex === 0}
+          className="flex items-center space-x-2 px-6 py-3 text-stone-600 hover:text-stone-900 disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+        >
+          <ArrowLeft className="w-5 h-5" />
+          <span className="font-medium">Previous</span>
+        </button>
+
+        {currentIndex === questions.length - 1 ? (
+          <button
+            onClick={handleSubmit}
+            disabled={answeredCount < questions.length || submitting}
+            className="flex items-center space-x-2 px-8 py-4 bg-emerald-600 text-white rounded-2xl font-bold hover:bg-emerald-700 disabled:opacity-50 disabled:cursor-not-allowed transition-all shadow-lg shadow-emerald-200"
+          >
+            {submitting ? (
+              <>
+                <div className="animate-spin rounded-full h-5 w-5 border-2 border-white border-t-transparent" />
+                <span>Analyzing...</span>
+              </>
+            ) : (
+              <>
+                <Sparkles className="w-5 h-5" />
+                <span>Get My Results</span>
+              </>
+            )}
+          </button>
+        ) : (
+          <button
+            onClick={handleNext}
+            disabled={!answers[currentQuestion?.id]}
+            className="flex items-center space-x-2 px-6 py-3 bg-stone-900 text-white rounded-2xl font-medium hover:bg-stone-800 disabled:opacity-40 disabled:cursor-not-allowed transition-all"
+          >
+            <span>Next Question</span>
+            <ArrowRight className="w-5 h-5" />
+          </button>
+        )}
+      </div>
+
+      {/* Info Box */}
+      <div className="mt-12 p-6 bg-stone-50 rounded-2xl border border-stone-100">
+        <div className="flex items-start space-x-4">
+          <div className="flex-shrink-0 w-10 h-10 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center">
+            <Target className="w-5 h-5" />
+          </div>
+          <div>
+            <h3 className="font-bold text-stone-900 mb-1">How this works</h3>
+            <p className="text-stone-600 text-sm">
+              Your answers will be analyzed using our AI matching algorithm to find careers 
+              that align with your personality traits, interests, and skills. The more 
+              honest your responses, the better your results!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
